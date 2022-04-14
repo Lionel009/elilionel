@@ -1,0 +1,24 @@
+Comment sauvegarder son travail dans git ?  (trois étape)
+1- git add .
+2- git commit -m "petit message"
+3- git push
+
+Comment recuperer les mises à jour de son collegue
+1- git pull
+
+Comment créer un repertoire à partir de Zero
+1- git init
+2- git add .
+3- git commit -m "first commit"
+4- git remote add origin repertoireGitSSH@git
+5- git push origin master
+
+Comment créer une branch
+1- git branch maNouvelleBranch
+
+Comment savoir sur quel Branch je suis ? 
+1- git branch
+
+Comment aller sur la branch de son collègue ? 
+1- (d'abord enregistré sa branch avec git add commit push)
+2- git checkout nomDeLaBranchDuCollegue
