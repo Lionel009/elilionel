@@ -1,0 +1,116 @@
+/* A utiliser
+font-family: 'Beau Rivage', cursive;
+font-family: 'Work Sans', sans-serif; */
+
+/* general */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Work Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+html{
+  font-size: 62.5%;
+  --gradient: linear-gradient(rgba(245, 255, 238, 0.842),60%, rgba(8, 206, 255, 0.89));
+  --gradrevers:linear-gradient(rgba(8, 206, 255, 0.89),rgba(115, 255, 21, 0.842),rgba(245, 255, 238, 0.842));
+  --primary: rgba(163, 49, 49, 0.794); 
+  --secondary: rgba(170, 166, 166, 0.918);
+  --shadow: linear-gradient(rgba(189, 183, 183, 0.596), rgba(39, 37, 37, 0.959));
+}
+
+/* header */
+.container{
+  display: block;
+  height: 100vh;
+  background: var(--gradient);
+}
+.header-container{
+  /* display: block; */
+  /* justify-content: space-between; */
+  background: var(--gradient);
+  width: 100%;
+  border: 1px solid;
+}
+.header-flag{
+  display: flex;
+  flex-flow: column nowrap;
+  background-image: url(../img-julie/julie\ photo\ teamulator.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header-flag-size{
+  min-width: 15rem;
+  min-height: 10rem;
+  margin: 1rem ;
+} 
+h1{
+  font-family: 'Beau Rivage', cursive;
+  font-size: 6rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+}
+li a{
+  text-transform: capitalize;
+  font-size: 2rem;
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-evenly;
+}
+a:hover{
+  color: #fff;
+  font-weight: bold;
+}
+/* main */
+ .main-container{
+  height: 80vh;
+  background: var(--gradrevers);
+  background-image: url(../../projet-html-css/ledor/ledorimage/frame.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+}
+h2{
+  font-size: x-large;
+  color: white;
+}
+
+em{
+  /* display:block; */
+  /* justify-content: center; */
+  margin: 10rem 0;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Work Sans', sans-serif;
+  color: aqua;
+}
+.main-em{
+  margin: 10rem 0;
+  color: #fff;
+}
+button{
+  border-radius: 10px;
+  text-align: center;
+  
+  
+}
+
+
