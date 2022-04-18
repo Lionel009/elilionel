@@ -1,0 +1,5 @@
+fermer le localhost pour l'auth
+
+fermer le cors dans les functions
+
+fermer les roles pour autoriser juste les aut

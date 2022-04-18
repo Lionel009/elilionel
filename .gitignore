@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+firebase-debug.*.log*
+
+# Firebase cache
+.firebase/
+
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+
+
+teamulator-react-firebase/node_modules/
+
+teamulator-react-firebase/build/
+teamulator-react-firebase/functions/node_modules/
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+

@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.game-unity {
+  width: 600px!important;
+  height: 800px!important;
+  display: flex;
+}
