@@ -1,5 +1,5 @@
 import React, {useState}  from 'react'
-import { onAuthStateChanged,  sendPasswordResetEmail,   getAuth} from 'firebase/auth' // onAuthChanged helps to track changes in state.
+import { onAuthStateChanged,  sendPasswordResetEmail, getAuth} from 'firebase/auth' // onAuthChanged helps to track changes in state.
 
 
 const ForgetPassword = () => {
@@ -12,8 +12,8 @@ const ForgetPassword = () => {
      const [responseOk, setResponseOk] = useState(false)
      // const [loginEmail, setLoginEmail] = useState("")
      // const [loginPassword, setLoginPassword] = useState("")
-     const [user, setUser] = useState({});
-   
+     const [ setUser] = useState({});
+   //user,
      onAuthStateChanged(auth, (currentUser) => {
        setUser(currentUser);
      })
@@ -28,8 +28,8 @@ const ForgetPassword = () => {
            console.log(responseOk);
          })
          .catch((error) => {
-           const errorCode = error.code;
-           const errorMessage = error.message;
+          // const errorCode = error.code;
+          // const errorMessage = error.message;
             
            // ..y
          });

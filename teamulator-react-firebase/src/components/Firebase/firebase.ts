@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app"
 import config from './config';
-import { getFirestore, doc, setDoc, getDoc , query, collection, getDocs, updateDoc} from 'firebase/firestore/lite';
+import { getFirestore, doc, setDoc, getDoc , collection, getDocs, updateDoc} from 'firebase/firestore/lite';
 
 // const context = useContext(Context);
 

@@ -1,22 +1,23 @@
-import React, { useContext } from 'react'
+import React from 'react'
+//, { useContext } 
 import Nav from 'react-bootstrap/Nav'
 import Forget from "../ForgetPassword/ForgetPassword"
 import Register from "../Register/Register"
 import LoginFirebase from "../LoginFirebase/LoginFirebase"
-import { useTranslation } from 'react-i18next';
-import { Context } from "../../hooks/ContextProvider"
+//import { useTranslation } from 'react-i18next';
+//import { Context } from "../../hooks/ContextProvider"
 
 
 
 const Index = () => {
 
-    const { t } = useTranslation();
+  //  const { t } = useTranslation();
     const [login, setLogin] = React.useState(true)
     const [register, setRegister] = React.useState(false)
     const [forget, setForget] = React.useState(false)
  
 
-    const context = useContext(Context)
+  //  const context = useContext(Context)
 
     function dispatchNav(selectedKey) {
 

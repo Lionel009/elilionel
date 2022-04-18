@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import * as anchor from "@project-serum/anchor";
-import { Switch, Route, useLocation } from 'react-router-dom';
+import React from "react";
+import { useLocation } from 'react-router-dom';
 import { ExternalLink } from 'react-external-link'
 
 // Components
@@ -10,8 +9,6 @@ import SocialNav from '../../components/SocialNav'
 import LogoSolajump from "../../assets/images/Logo_solajump1.png"
 // Style
 import '../../styles.scss';
-
-
 
 const Home = ({children}) => {
   //assigning location variable

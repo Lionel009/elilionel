@@ -1,7 +1,7 @@
-import { signInWithEmailAndPassword, onAuthStateChanged, signOut, getAuth } from 'firebase/auth' // onAuthChanged helps to track changes in state.
+import { signInWithEmailAndPassword, onAuthStateChanged, getAuth } from 'firebase/auth' // onAuthChanged helps to track changes in state.
 import React, { useState, useContext } from 'react'
 import { Context } from "../../hooks/ContextProvider"
-import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
 import { getUserData } from '../Firebase/firebase'
 import { useHistory } from "react-router-dom";
 
@@ -15,16 +15,17 @@ function Register() {
   const [registerPassword, setRegisterPassword] = useState("")
   // const [loginEmail, setLoginEmail] = useState("")
   // const [loginPassword, setLoginPassword] = useState("")
-  const [user, setUser] = useState();
-  const [isUser, setIsUser] = useState(false);
-  const [isMessageError, setIsMessageError] = useState();
-  const [loginState, setLoginState] = useState(false);
+  const [setUser] = useState();
+  //user, 
+ // const [isUser, setIsUser] = useState(false);
+ // const [isMessageError, setIsMessageError] = useState();
+  //const [loginState, setLoginState] = useState(false);
   const [isWaiting, setIsWaiting] = useState(false);
   const [isFormOpen, setIsFormOpen] = useState(true);
 
   const context = useContext(Context)
 
-  const { t } = useTranslation();
+ // const { t } = useTranslation();
 
 
   onAuthStateChanged(auth, (currentUser) => {

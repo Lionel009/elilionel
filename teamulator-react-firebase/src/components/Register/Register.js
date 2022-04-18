@@ -1,11 +1,8 @@
-import {createUserWithEmailAndPassword, onAuthStateChanged, signOut,  getAuth} from 'firebase/auth' // onAuthChanged helps to track changes in state.
+import {createUserWithEmailAndPassword, onAuthStateChanged, getAuth} from 'firebase/auth' // onAuthChanged helps to track changes in state.
 import React, {useState, useContext} from 'react'
 import {Context} from "../../hooks/ContextProvider"
 import { registerUser } from '../Firebase/firebase'
-import styled from "styled-components";
-import { useAnchorWallet } from "@solana/wallet-adapter-react";
-import { useTranslation } from 'react-i18next';
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+//import { useTranslation } from 'react-i18next';
 
 
 function Register() {
@@ -17,20 +14,15 @@ function Register() {
   const [registerPassword, setRegisterPassword] = useState("")
   // const [loginEmail, setLoginEmail] = useState("")
   // const [loginPassword, setLoginPassword] = useState("")
-  const [user, setUser] = useState();
-  const [username, setUsername] = useState();
+  const [ setUser] = useState();
+  //user,
+  const [username] = useState();
+  //, setUsername
   const [isUser, setIsUser] = useState(false);
   const [isMessageError, setIsMessageError] = useState();
   const context = useContext(Context)
 
-  const ConnectButton = styled(WalletDialogButton)``;
-  const { t } = useTranslation();
-  const wallet = useAnchorWallet();
-
-  function setWallet(wallet){
-    context.setContextWallet(wallet)
-}
-
+ // const { t } = useTranslation();
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);

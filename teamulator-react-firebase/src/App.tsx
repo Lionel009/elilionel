@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./App.css";
 import { Route, Switch } from 'react-router-dom';
@@ -12,7 +11,6 @@ import NotAccess from "../src/components/CustomerAccess/CustomerNotAccess"
 import CustomerAccess from "../src/components/CustomerAccess/CustomerAccess"
 import AdminPage from "../src/components/AdminPage/AdminPage"
 
-import Screen from "../src/components/Download/Download"
 
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import { DocumentProvider } from "./components/DocumentProvider";
@@ -90,10 +88,6 @@ const App = () => {
 
           <Route exact path="/functions">
             <SendFunctions />
-          </Route>
-
-          <Route exact path="/screen">
-            <Screen />
           </Route>
 
         </Switch>

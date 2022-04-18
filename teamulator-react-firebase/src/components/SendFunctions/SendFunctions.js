@@ -1,20 +1,17 @@
 import React, {useState} from 'react'
-const Cryptr = require('cryptr');
 
 const SendFunctions = () => {
 
 const [inputMail, setInputMail] = useState()
 
 const cliktoFetch = async () => {
-    const cryptr = new Cryptr('myTotalySecretKey');
     let highscore = 150381
     console.log(highscore);
-    const encryptedString = cryptr.encrypt(highscore);
-    console.log(encryptedString); 
+ 
+  
     let message = {
-        message : encryptedString
+        message : ""
     }
-    
     const blabala =  await window.fetch(`http://localhost:5001/solajump-cf/us-central1/addMessage` , { method: 'POST', body : JSON.stringify(message), headers: {"Content-Type": "application/json",},})
     console.log(blabala);  
 }
