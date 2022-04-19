@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app"
 import config from './config';
-import { getFirestore, doc, setDoc, getDoc , collection, getDocs, updateDoc} from 'firebase/firestore/lite';
+import { getFirestore, doc, setDoc, getDoc , collection, getDocs, updateDoc, where, query} from 'firebase/firestore/lite';
 
 // const context = useContext(Context);
 
@@ -20,12 +20,13 @@ export const  registerUser = async (uid, email) => {
 	await setDoc(doc(db, "user", uid), {
 		uid: uid,
 		email: email,
-		role: 3, 
+		role: 2, 
 		isAccess: false
 	  });
 
 	return true;
 };
+
 
 export const getUserData = async (uid) => {
 	const docRef = doc(db, `user/${uid}`);
@@ -34,7 +35,6 @@ export const getUserData = async (uid) => {
 	if ( docSnap.exists() ) {
 
 		const userData = docSnap.data()
-	//	console.log(usernameData);
 
 		let ObjectData = {
 			isAccess: userData.isAccess, 
@@ -49,31 +49,29 @@ export const getUserData = async (uid) => {
 
 }; 
 
-export const getAllUser = async () => {
+export const getUsersNoAdmin = async () => {
 
-	const querySnapshot = await getDocs(collection(db, "user"));
+	const q = query(collection(db, "user"), where("role", "==", 2));
+
+	const querySnapshot = await getDocs(q);
 	let data_array:any[] = [];
 	querySnapshot.forEach((doc) => {
-
-		let littleObjectForArray:any = {};
-		littleObjectForArray.uid = doc.id;
-		littleObjectForArray.email = doc.data().email;
-		littleObjectForArray.isAccess = doc.data().isAccess;
-
-		data_array.push(littleObjectForArray as any);
-			
-		});	
 	  // doc.data() is never undefined for query doc snapshots
-	 
+	  let littleObjectForArray:any = {};
+	  littleObjectForArray.uid = doc.id;
+	  littleObjectForArray.email = doc.data().email;
+	  littleObjectForArray.isAccess = doc.data().isAccess;
 
-	  return data_array;
-
+	  data_array.push(littleObjectForArray as any);
+	});
+//	console.log(data_array);
+	
+	return data_array;
 }
 
 export const updateBoolValue = async (  boolValue, uid) => {
-	console.log("updataBOol actif",uid, boolValue );
-	
-	
+//	console.log("updataBOol actif",uid, boolValue );
+
 	const currDoc = doc(db, `user/${uid}`);
 
 	await updateDoc(currDoc, {
@@ -83,3 +81,23 @@ export const updateBoolValue = async (  boolValue, uid) => {
 };
 
 
+// export const getAllUser = async () => {
+
+// 	const querySnapshot = await getDocs(collection(db, "user"));
+// 	let data_array:any[] = [];
+// 	querySnapshot.forEach((doc) => {
+
+// 		let littleObjectForArray:any = {};
+// 		littleObjectForArray.uid = doc.id;
+// 		littleObjectForArray.email = doc.data().email;
+// 		littleObjectForArray.isAccess = doc.data().isAccess;
+
+// 		data_array.push(littleObjectForArray as any);
+			
+// 		});	
+// 	  // doc.data() is never undefined for query doc snapshots
+	 
+
+// 	  return data_array;
+
+// }

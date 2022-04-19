@@ -1,21 +1,19 @@
-import React, {useState}  from 'react'
+import React, {useState, useContext}  from 'react'
 import { onAuthStateChanged,  sendPasswordResetEmail, getAuth} from 'firebase/auth' // onAuthChanged helps to track changes in state.
+import { Context } from "../../hooks/ContextProvider"
 
 
 const ForgetPassword = () => {
 
     const auth = getAuth();
-
+    const context = useContext(Context)
     // add commentaire test
      const [registerEmail, setRegisterEmail] = useState("")
-
      const [responseOk, setResponseOk] = useState(false)
-     // const [loginEmail, setLoginEmail] = useState("")
-     // const [loginPassword, setLoginPassword] = useState("")
-     const [ setUser] = useState({});
-   //user,
+
+
      onAuthStateChanged(auth, (currentUser) => {
-       setUser(currentUser);
+       context.setContextUser(currentUser);
      })
    
 

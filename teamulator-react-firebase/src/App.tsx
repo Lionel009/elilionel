@@ -1,8 +1,7 @@
 import React from "react";
-import "./App.css";
 import { Route, Switch } from 'react-router-dom';
-
 import TagManager from 'react-gtm-module'
+
 import Layout from "./components/Layout"
 import ForgetPassword from "../src/components/ForgetPassword/ForgetPassword"
 import Register from "../src/components/Register/Register"
@@ -12,36 +11,12 @@ import CustomerAccess from "../src/components/CustomerAccess/CustomerAccess"
 import AdminPage from "../src/components/AdminPage/AdminPage"
 
 
-import { createTheme, ThemeProvider } from "@material-ui/core";
-import { DocumentProvider } from "./components/DocumentProvider";
+
+//import { DocumentProvider } from "./components/DocumentProvider";
 import SendFunctions from "./components/SendFunctions/SendFunctions"
 
+import "./App.css";
 
-const theme = createTheme({
-  palette: {
-    type: 'dark',
-  },
-  overrides: {
-    MuiButtonBase: {
-      root: {
-        justifyContent: 'flex-start',
-      },
-    },
-    MuiButton: {
-      root: {
-        textTransform: undefined,
-        padding: '12px 16px',
-        fontFamily: "Orbitron"
-      },
-      startIcon: {
-        marginRight: 8,
-      },
-      endIcon: {
-        marginLeft: 8,
-      },
-    },
-  },
-});
 
 const App = () => {
 
@@ -54,8 +29,7 @@ const App = () => {
 
 
   return (
-    <ThemeProvider theme={theme}>
-      <DocumentProvider>
+   
         <Switch>
 
           <Route exact path="/">
@@ -91,8 +65,7 @@ const App = () => {
           </Route>
 
         </Switch>
-      </DocumentProvider>
-    </ThemeProvider>
+   
   );
 };
 

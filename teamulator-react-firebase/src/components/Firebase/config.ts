@@ -1,7 +1,7 @@
 const config = {
   firebase: {
 
-    apiKey: process.env.REACT_APP_API_KEY,
+    apiKey: "AIzaSyB2acepumZAzqOuhkmHTYvonJsWoAjxrEw",
     authDomain: "teamulator-ce878.firebaseapp.com",
     projectId: "teamulator-ce878",
     storageBucket: "teamulator-ce878.appspot.com",

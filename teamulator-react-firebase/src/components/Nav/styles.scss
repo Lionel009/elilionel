@@ -10,7 +10,7 @@
 @mixin menu-active {
   border-radius: 50px;
   color: $white;
-  background: $rose;
+  background: $blue;
 }
 
 .navbar {
@@ -51,7 +51,7 @@
 }
 
 .navbar-toggler.navbar-toggler-main {
-  background: $rose;
+  background: $blue;
   margin-left: auto;
 }
 
