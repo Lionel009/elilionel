@@ -12,19 +12,15 @@ function Register() {
 
   const [registerEmail, setRegisterEmail] = useState("")
   const [registerPassword, setRegisterPassword] = useState("")
+  const [flagRegistered, setFlagRegistered] = useState(null)
   const [isMessageError, setIsMessageError] = useState();
-
-
-
 
   onAuthStateChanged(auth, (currentUser) => {
     context.setContextUser(currentUser);
   })
 
   // React.useEffect(() => {
-    
   //   console.log('le user Securisé est :', context.contextUser);
-
   // }, [context.contextUser])
   
 
@@ -32,12 +28,11 @@ function Register() {
     console.log(registerEmail);
     try {
       const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
-      
       setIsMessageError("")
-      console.log("user.uid", user.user.uid);
-      console.log("user.email", user.user.email);
-     const AddInfo = await registerUser( user.user.uid, registerEmail)
-     console.log("AddInfo", AddInfo);
+      setFlagRegistered(user)
+      const AddInfo = await registerUser( user.user.uid, registerEmail)
+      
+      console.log("AddInfo", AddInfo);
 
     } catch (error) {
       console.log(error.message);
@@ -52,15 +47,19 @@ function Register() {
   return (
     <div className="App">
 
-      { !context.contextUser && 
+      { !flagRegistered && 
         <>
         <div className="mb-3">
           <input type="email" className="form-control text-dark"  placeholder="Email.." onChange={(event) => {setRegisterEmail(event.target.value)}}      />
         </div>
 
         <div className="mb-3">
-          <input type="password" className="form-control text-dark"  placeholder="Password.." onChange={(event) => {setRegisterPassword(event.target.value)}}      />
+          <input type="password" className="form-control text-dark"  placeholder="Create new Password.." onChange={(event) => {setRegisterPassword(event.target.value)}}      />
         </div>
+
+        {/* <div className="mb-3">
+          <input type="password" className="form-control text-dark"  placeholder="Repeat your Password.." onChange={(event) => {setRegisterPassword(event.target.value)}}      />
+        </div> */}
 
         {/* <div className="mb-3">
           <input type="password" className="form-control text-dark"  placeholder="Confirm Password.." onChange={(event) => {setRegisterPassword(event.target.value)}}      />
@@ -74,14 +73,14 @@ function Register() {
         </>
       }
 
-      { context.contextUser && 
+      { flagRegistered && 
         <>
           <h1 className='text-danger'>thank you for your registering, please wait your admin</h1>
         </>
       }
       { isMessageError && 
         <>
-          <h6 className='text-danger'>your email is already exist</h6>
+          <h6 className='text-danger'>{isMessageError}</h6>
         </>
       }
 

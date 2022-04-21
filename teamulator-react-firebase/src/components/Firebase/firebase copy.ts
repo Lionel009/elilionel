@@ -1,15 +1,15 @@
 import { useContext} from "react"
 import { initializeApp } from "firebase/app"
-import config from './config';
+import firebaseConfig from './config';
 import { getFirestore, collection, addDoc, getDocs, doc, query, where, setDoc, updateDoc, getDoc, Firestore, DocumentReference, DocumentData, DocumentSnapshot, orderBy, limit} from 'firebase/firestore/lite';
-import { firebase } from "googleapis/build/src/apis/firebase";
+
 import {Context} from "../../hooks/ContextProvider"
 import uuid from 'react-uuid'
 // const context = useContext(Context);
 
 // version 9 MODULAR
 
-const Firebase = initializeApp(config.firebase);
+const Firebase = initializeApp(firebaseConfig);
 
 export default Firebase;
 const exists: string[] = [] ?? [];

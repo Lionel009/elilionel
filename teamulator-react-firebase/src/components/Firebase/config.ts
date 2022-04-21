@@ -1,5 +1,5 @@
-const config = {
-  firebase: {
+const firebaseConfig  = {
+
 
     apiKey: "AIzaSyB2acepumZAzqOuhkmHTYvonJsWoAjxrEw",
     authDomain: "teamulator-ce878.firebaseapp.com",
@@ -8,7 +8,7 @@ const config = {
     messagingSenderId: "939561996764",
     appId: "1:939561996764:web:919a2c5bf7b4f979187f19",
     measurementId: "G-0KXDKBQLWE"
-  }
+ 
 }
 
-export default config
+export default firebaseConfig

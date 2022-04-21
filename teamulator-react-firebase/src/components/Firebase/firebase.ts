@@ -1,23 +1,25 @@
 import { initializeApp } from "firebase/app"
-import config from './config';
-import { getFirestore, doc, setDoc, getDoc , collection, getDocs, updateDoc, where, query} from 'firebase/firestore/lite';
 
-// const context = useContext(Context);
+
+import firebaseConfig from './config';
+import { getFirestore, doc, setDoc, getDoc , collection, getDocs, updateDoc, where, query, addDoc} from 'firebase/firestore/lite';
+
+//const context = useContext(Context);
 
 // version 9 MODULAR
 
-const Firebase = initializeApp(config.firebase);
+const firebaseApp  = initializeApp(firebaseConfig);
 
-export default Firebase;
+export default firebaseApp ;
 
 
-export const db = getFirestore(Firebase);
+export const db = getFirestore(firebaseApp);
 
 
 export const  registerUser = async (uid, email) => {
-	console.log("ouverture de register", uid, email);
+	//console.log("ouverture de register", uid, email);
 	
-	await setDoc(doc(db, "user", uid), {
+	await setDoc(doc(db, "user"), {
 		uid: uid,
 		email: email,
 		role: 2, 
@@ -27,6 +29,24 @@ export const  registerUser = async (uid, email) => {
 	return true;
 };
 
+export const  createVideo = async (objectVideo) => {
+	//console.log("ouverture de register", uid, email);
+	
+	// await setDoc(doc(db, "video"), {
+		
+	// 	titleVideo: objectVideo.titleVideo,
+	// 	PresentationVideo: objectVideo.PresentationVideo,
+	// 	DateVideo: objectVideo.DateVideo,
+	// 	urlImage: objectVideo.urlImage
+		
+		  
+	// } );
+	const docRef = await addDoc(collection(db, "video"), objectVideo);
+	  console.log("Document written with ID: ", docRef.id);
+	
+
+	return true;
+};
 
 export const getUserData = async (uid) => {
 	const docRef = doc(db, `user/${uid}`);
@@ -46,6 +66,27 @@ export const getUserData = async (uid) => {
 	// doc.data() will be undefined in this case
 	 console.log("No such document!");
 	}
+
+}; 
+export const getVideoDB = async () => {
+	const q = query(collection(db, "video"));
+
+	const querySnapshot = await getDocs(q);
+	let data_array:any[] = [];
+	querySnapshot.forEach((doc) => {
+	  // doc.data() is never undefined for query doc snapshots
+	  let littleObjectForArray:any = {};
+	  littleObjectForArray.id = doc.id;
+	  littleObjectForArray.title = doc.data().titleVideo;
+	  littleObjectForArray.video = doc.data().stringVideo;
+	  littleObjectForArray.DateVideo = doc.data().DateVideo;
+	  littleObjectForArray.PresentationVideo = doc.data().PresentationVideo;
+
+	  data_array.push(littleObjectForArray as any);
+	});
+	// console.log("data_array", data_array);
+	
+	return data_array;
 
 }; 
 

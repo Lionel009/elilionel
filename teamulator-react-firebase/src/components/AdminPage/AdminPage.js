@@ -1,20 +1,23 @@
-import React, { useEffect, useContext } from 'react'
-import { useHistory } from "react-router-dom";
-import {Context} from "../../hooks/ContextProvider"
+import React, { useEffect} from 'react'
+//, useContext 
+//import { useHistory } from "react-router-dom";
+//import {Context} from "../../hooks/ContextProvider"
 
 import { getUsersNoAdmin, updateBoolValue } from '../Firebase/firebase'
 import  Form  from "react-bootstrap/Form"
+import CreateVideo from '../CreateVideo/CreateVideo';
 
 
 const AdminPage = () => {
 
-    const context = useContext(Context) 
-    const history = useHistory();
+    // const context = useContext(Context) 
+    // const history = useHistory();
 
     const [first, setfirst] = React.useState([])
 
     useEffect(() => {
         FetchUsers()
+       
     }, [])
 
     const FetchUsers = async () => {
@@ -22,16 +25,18 @@ const AdminPage = () => {
         setfirst(stockReponse)
     }    
 
-    useEffect(() => {
-        if (context.contextRole === 2 || context.contextUser === null ) {
-            alert("access denied");
-            history.push('/');
-        }
-        return () => {
-            // nettoyage des variables utilisé pour rien
-            setfirst()
-          }
-    }, [context.contextRole,context.contextUser, history ])
+  
+
+    // useEffect(() => {
+    //     if (context.contextRole === 2 || context.contextUser === null ) {
+    //         alert("access denied");
+    //         history.push('/');
+    //     }
+    //     return () => {
+    //         // nettoyage des variables utilisé pour rien
+    //         setfirst()
+    //       }
+    // }, [context.contextRole,context.contextUser, history ])
     
     const handleChange = async (e, uid) =>{
         let isChecked = e.target.checked;
@@ -43,7 +48,7 @@ const AdminPage = () => {
 
     return (
         <>
-        { context.contextRole === 1 &&
+        {/* { context.contextRole === 1 && */}
             <div className='container'>
                     <h2 className='text-center'>Hello Admin </h2>
                     <h6 className='text-center'>vous pouvez Ajouter, ou Supprimer des Videos</h6>
@@ -86,9 +91,11 @@ const AdminPage = () => {
 
                         </tbody>
                     </table>
-
+   
+                          <CreateVideo />
             </div>
-        }
+           
+        {/* } */}
  
         </>
     )

@@ -9,6 +9,7 @@ import Auth from "../src/components/AuthGlobal/AuthGlobal"
 import NotAccess from "../src/components/CustomerAccess/CustomerNotAccess"
 import CustomerAccess from "../src/components/CustomerAccess/CustomerAccess"
 import AdminPage from "../src/components/AdminPage/AdminPage"
+import Home from "../src/components/Home/Home"
 
 
 
@@ -29,43 +30,45 @@ const App = () => {
 
 
   return (
-   
-        <Switch>
 
-          <Route exact path="/">
-            <Auth />
-          </Route>
+    <Switch>
 
-          <Route path="/register">
-            <Layout>
-              <Register />
-            </Layout>
-          </Route>
+      <Route exact path="/">
+        <Home />
+      </Route>
 
-          <Route path="/forgetPassword">
-            <Layout>
-              <ForgetPassword />
-            </Layout>
-          </Route>
+      <Route exact path="/login">
+        <Auth />
+      </Route>
 
-          <Route exact path="/notAccess">
-            <NotAccess />
-          </Route>
+      <Route path="/register">
+        <Register />
+      </Route>
 
-          <Route exact path="/adminPage">
-            <AdminPage />
-          </Route>
+      <Route path="/forgetPassword">
+        <ForgetPassword />
+      </Route>
 
-          <Route exact path="/customerAccess">
-            <CustomerAccess />
-          </Route>
+      <Route exact path="/notAccess">
+        <NotAccess />
+      </Route>
 
-          <Route exact path="/functions">
-            <SendFunctions />
-          </Route>
+      <Route exact path="/adminPage">
+        <AdminPage />
+      </Route>
 
-        </Switch>
-   
+      <Route exact path="/customerAccess">
+        <CustomerAccess />
+      </Route>
+
+      <Route exact path="/functions">
+        <Layout >
+          <SendFunctions />
+        </Layout>
+      </Route>
+
+    </Switch>
+
   );
 };
 

@@ -11,9 +11,7 @@ import LogoSolajump from "../../assets/images/Logo_solajump1.png"
 import '../../styles.scss';
 
 const Home = ({children}) => {
-  //assigning location variable
   const location = useLocation();
-  //destructuring pathname from location
   const { pathname } = location;
 
   //Javascript split method to get the name of the path in array
