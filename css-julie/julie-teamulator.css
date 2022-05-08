@@ -70,7 +70,6 @@ h2 {
 
 .btn {
   border: 1px solid rgb(5, 8, 8);
-  /* background:var(--gradient); */
   color: var(--dark);
   border-radius: 5rem;
   font-size: large;
