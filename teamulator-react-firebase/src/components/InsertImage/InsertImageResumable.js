@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { getStorage, ref,  getDownloadURL, uploadBytesResumable,} from "firebase/storage";
 import { Context } from "../../hooks/ContextProvider";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { uuid  } from 'uuidv4';
 //import Form from "react-bootstrap/Form";
 
 const InsertImage = () => {
@@ -9,22 +10,22 @@ const InsertImage = () => {
 
   const [image, setImage] = useState(null);
   const [progress, setProgress] = useState(0);
-  const [nameDoc, setNameDoc] = useState("sansNom");
+  const [nameDoc, setNameDoc] = useState();
   const [errorFirebase, setErrorFirebase] = useState(null);
   const [isRunning, setIsRunning] = useState(null);
 
   const handleChange = (e) => {
     if (e.target.files[0]) {
       // stock le nom du l'image
-      setNameDoc(e.target.files[0].name);
+      var newName = e.target.files[0].name + uuid() ;
+      console.log("newName", newName)
+      setNameDoc(newName);
 
       //stock l'image dans son integralité afin de l'envoyer
       setImage(e.target.files[0]);
     }
   };
 
-
-  
 
   const storage = getStorage();
   const storageRef = ref(storage, `download/${nameDoc}`);

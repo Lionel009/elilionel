@@ -36,25 +36,28 @@ const CustomerAccess = () => {
 
   return (
     <>
+    <div className='bg-dark'>
       <div className='row justify-content-center align-items-center' >
         <div className="col-auto">
           <h3 className='text-center'>Private Video</h3>
         </div>
       </div>
+
       <div>
-            {videoDB &&
-               videoDB.map((video, index) => (
-                   <div key={index} className="text-center border py-3">
-                       <h2>{video.title} <span className='text-secondary' style={{fontSize: "10px"}}> du {video.DateVideo}</span></h2>
-                       <p>{video.PresentationVideo}</p>
-                        <video width="400" controls>
-                            <source src={video.video} type="video/mp4" />
-                        </video>
-                    </div>
-               )) 
-            }
-           
-        </div>
+        {videoDB &&
+          videoDB.map((video, index) => (
+              <div key={index} className="text-center border py-3">
+                  <h2>{video.title} <span className='text-secondary' style={{fontSize: "10px"}}> du {video.DateVideo}</span></h2>
+                  <p>{video.PresentationVideo}</p>
+                  <video width="400" controls>
+                      <source src={video.video} type="video/mp4" />
+                  </video>
+              </div>
+          )) 
+        }
+      </div>
+      </div>
+
     </>
   )
 }

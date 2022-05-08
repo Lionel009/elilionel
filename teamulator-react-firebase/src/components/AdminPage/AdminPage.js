@@ -1,104 +1,43 @@
-import React, { useEffect} from 'react'
-//, useContext 
+import React, { useEffect } from "react";
+//, useContext
 //import { useHistory } from "react-router-dom";
 //import {Context} from "../../hooks/ContextProvider"
 
-import { getUsersNoAdmin, updateBoolValue } from '../Firebase/firebase'
-import  Form  from "react-bootstrap/Form"
-import CreateVideo from '../CreateVideo/CreateVideo';
-
+import { getUsersNoAdmin, updateBoolValue } from "../Firebase/firebase";
+import CardChoice from "./CardChoice";
 
 const AdminPage = () => {
+  // const context = useContext(Context)
+  // const history = useHistory();
 
-    // const context = useContext(Context) 
-    // const history = useHistory();
+  // useEffect(() => {
+  //     if (context.contextRole === 2 || context.contextUser === null ) {
+  //         alert("access denied");
+  //         history.push('/');
+  //     }
+  //     return () => {
+  //         // nettoyage des variables utilisé pour rien
+  //         setfirst()
+  //       }
+  // }, [context.contextRole,context.contextUser, history ])
 
-    const [first, setfirst] = React.useState([])
+  return (
+    <>
+      <div className="bg-dark">
+        <div className="container">
+          <div className="row justify-content-around align-items-center" style={{ minHeight: "100vh" }} >
 
-    useEffect(() => {
-        FetchUsers()
-       
-    }, [])
+            <CardChoice text="Users" bgColor="warning" link="/AdminPage/Users" />
 
-    const FetchUsers = async () => {
-        var stockReponse = await getUsersNoAdmin()
-        setfirst(stockReponse)
-    }    
+            <CardChoice text="Private Video" bgColor="primary" link="/AdminPage/PrivateVideo" />
 
-  
+            <CardChoice text="Articles" bgColor="success"  link="/AdminPage/Articles" />
 
-    // useEffect(() => {
-    //     if (context.contextRole === 2 || context.contextUser === null ) {
-    //         alert("access denied");
-    //         history.push('/');
-    //     }
-    //     return () => {
-    //         // nettoyage des variables utilisé pour rien
-    //         setfirst()
-    //       }
-    // }, [context.contextRole,context.contextUser, history ])
-    
-    const handleChange = async (e, uid) =>{
-        let isChecked = e.target.checked;
-        console.log(isChecked, uid);
-        await updateBoolValue(isChecked, uid)
-    }
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-    
-
-    return (
-        <>
-        {/* { context.contextRole === 1 && */}
-            <div className='container'>
-                    <h2 className='text-center'>Hello Admin </h2>
-                    <h6 className='text-center'>vous pouvez Ajouter, ou Supprimer des Videos</h6>
-                    <h6 className='text-center'>Ainsi que valider vos users</h6>
-
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">isAccessVideo</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {first &&
-
-                                first.map((user, index) => (
-                                    <tr key={user.uid}>
-                                        <th scope="row">{index + 1}</th>
-                                        <td>{user.email}</td>
-                                        <td>
-                                        
-                                                <Form.Check
-                                                    type="switch"
-                                                    id="custom-switch"
-                                                    label={user.isAccess? ("Supprimer l'accés"): ("Activer l'accés")}
-                                                    defaultChecked={user.isAccess}
-                                                    onChange={e => handleChange(e, user.uid)}
-                                                />
-                                        
-                                        ( actuellement : {user.isAccess.toString()} )
-
-                                        </td>
-                                    </tr>
-                                ))
-
-                            }
-
-
-                        </tbody>
-                    </table>
-   
-                          <CreateVideo />
-            </div>
-           
-        {/* } */}
- 
-        </>
-    )
-}
-
-export default AdminPage
+export default AdminPage;

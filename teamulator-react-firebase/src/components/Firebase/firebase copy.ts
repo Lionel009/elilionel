@@ -196,6 +196,7 @@ export const  registerUser = async (uid, email) => {
 
 
 
+	
 // save walletAddress with mintAddress when user mints in home page.
 export const  getMintId = async (mintAddress, walletAddress) => { // TESTING PASSED. restricted mint amount to 2
 	// console.log(`Currently adding mint... : ${mintAddress}`) // REMOVE BEFORE PROD.

@@ -10,6 +10,8 @@ import NotAccess from "../src/components/CustomerAccess/CustomerNotAccess"
 import CustomerAccess from "../src/components/CustomerAccess/CustomerAccess"
 import AdminPage from "../src/components/AdminPage/AdminPage"
 import Home from "../src/components/Home/Home"
+import AdminPageUser from "./components/AdminPage/Users"
+import AdminPageVideo from "./components/AdminPage/PrivateVideo"
 
 
 
@@ -54,6 +56,18 @@ const App = () => {
       </Route>
 
       <Route exact path="/adminPage">
+        <AdminPage />
+      </Route>
+
+      <Route exact path="/adminPage/Users">
+        <AdminPageUser />
+      </Route>
+
+      <Route exact path="/AdminPage/PrivateVideo">
+        <AdminPageVideo />
+      </Route>
+      
+      <Route exact path="/adminPage/Articles">
         <AdminPage />
       </Route>
 

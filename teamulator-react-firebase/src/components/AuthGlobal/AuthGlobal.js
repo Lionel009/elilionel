@@ -51,8 +51,18 @@ const Index = () => {
     return (
 
         <div className='container' >
-            <div className="row justify-content-center items-align-center">
-                <div className="col-6">
+
+
+             
+            <div className="row justify-content-center items-align-center pt-5" >
+                <div className="col-6 border border-primary rounded">
+                    <div className="row justify-content-center mt-5">
+                         <figure className='col-auto'>
+                    <img className='text-center mx-auto' src="https://firebasestorage.googleapis.com/v0/b/teamulator-ce878.appspot.com/o/assets%2Fjulie%20photo%20teamulator.png?alt=media&token=7ba0b9ef-b3c0-4bbb-86bb-457be9e67114" alt="" />
+                    </figure>
+                    </div>
+                   
+                    
                     <Nav variant="tabs" className="justify-content-center mt-5" onSelect={(selectedKey) => dispatchNav(selectedKey)}>
 
                         <Nav.Item>

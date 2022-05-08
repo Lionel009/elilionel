@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app"
 
 
 import firebaseConfig from './config';
-import { getFirestore, doc, setDoc, getDoc , collection, getDocs, updateDoc, where, query, addDoc} from 'firebase/firestore/lite';
+import { getFirestore, doc, setDoc, getDoc , collection, getDocs, updateDoc, where, query, addDoc, deleteDoc } from 'firebase/firestore/lite';
 
 //const context = useContext(Context);
 
@@ -26,6 +26,15 @@ export const  registerUser = async (uid, email) => {
 		isAccess: false
 	  });
 
+	return true;
+};
+
+export const  deleteVideo = async (uid) => {
+	//console.log("ouverture de register", uid, email);
+	
+	await deleteDoc(doc(db, "video", uid));
+	console.log(uid,"Deleted");
+	
 	return true;
 };
 
@@ -89,6 +98,7 @@ export const getVideoDB = async () => {
 	return data_array;
 
 }; 
+
 
 export const getUsersNoAdmin = async () => {
 

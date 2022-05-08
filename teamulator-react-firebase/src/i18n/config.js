@@ -12,6 +12,9 @@ i18n
       },
       fr: {
         translations: require("./locales/fr/translations.json"),
+      },
+      he: {
+        translations: require("./locales/he/translations.json"),
       }
 
     },
@@ -19,6 +22,6 @@ i18n
     defaultNS: "translations",
   });
 
-i18n.languages = ["en", "fr"];
+i18n.languages = ["en", "fr", "he"];
 
 export default i18n;
