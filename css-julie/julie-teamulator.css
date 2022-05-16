@@ -7,7 +7,7 @@ font-family: 'Work Sans', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'times new roman', 'Work Sans', sans-serif;
 }
 a {
   text-decoration: none;
@@ -15,6 +15,11 @@ a {
 
 li {
   list-style: none;
+}
+p:hover {
+  background-color: #fff;
+  border-radius: 3px;
+  font-weight: 600;
 }
 
 html {
@@ -52,20 +57,20 @@ h2 {
 }
 /* utility */
 
-.contain {
+.containers {
+  display: block;
+  margin: auto;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+/* .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-/* .flag-languages { */
-/* display: flex; */
-/* }
-.nav-language {
-  max-height: 20px;
-  max-width: 30px;
 } */
+
 .btn-container {
-  margin-top: 5.5rem;
+  /* margin-top: 5.5rem; */
+  margin: 2rem;
 }
 
 .btn {
@@ -77,57 +82,54 @@ h2 {
   text-transform: capitalize;
   padding: 0.5rem;
 }
+
 .btn:hover {
   background-color: #000;
   color: white;
 }
 
-/*--------------------- header----------------------------*/
-
-/*.header-container {
-   background: var(--gradrevers); */
-/* width: 100%; 
-}*/
-.header-flag {
+/*---------- header construction------- */
+.vp-contain-header {
   display: flex;
-  flex-flow: column nowrap;
-  background-image: url(../img-julie/julie\ photo\ teamulator.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.header-flag-size {
-  /* min-width: 15rem;
-  min-height: 10rem; */
-  margin: 1rem;
-}
-h1 {
-  font-family: 'Beau Rivage', cursive;
-  font-size: 5.5rem;
-  text-transform: capitalize;
-  text-align: center;
+  flex-direction: row nowrap;
 }
 
-.header-navigation {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row nowrap;
+.header-h1 {
+  margin: 0 auto;
+  font-size: 5rem;
+  text-transform: uppercase;
 }
- header nav a {
-  text-transform: capitalize;
-  font-size: 2rem;
+header img {
+  max-width: 100px;
+}
+.header-nav {
   display: flex;
-  margin: 0 20px;
-  /* justify-content: space-around; */
-  color: #000;
+  justify-content: space-between;
   position: sticky;
   top: 0;
+  background-color: var(--whitesweet);
+  z-index: 1;
+  padding: auto;
+  margin-top: 10px;
+}
+.header-a {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  border: solid var(--whitesweet);
 }
 
-/* a:hover {
-  color: #fff;
+nav a:hover {
+  color: rgb(248, 14, 6);
+  padding: auto;
   font-weight: bold;
-} */
-
+  border: solid rgba(248, 227, 188, 0.068);
+  border-radius: 5px;
+  font-size: 20px;
+}
+/*--------- team at the table--------- */
 .main-container {
   display: flex;
   flex: auto;
@@ -136,13 +138,10 @@ h1 {
   justify-content: center;
   flex-flow: row nowrap;
   min-height: 90vh;
-  background-image: url(../img-julie/img\ borde\ people.png);
+  background-image: url(../img-julie/60+.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 80%;
-  margin: 0 auto ; */
   line-height: 10rem;
-  filter: contrast(0.7);
 }
 
 .main-img-container {
@@ -156,7 +155,7 @@ span {
   text-align: center;
   font-size: 5rem;
   font-family: 'Work Sans', sans-serif;
-  color: rgb(15, 15, 15);
+  color: rgb(252, 249, 249);
 }
 .main-em {
   font-size: 5rem;
@@ -165,26 +164,36 @@ span {
 }
 .main-pshape {
   line-height: 5rem;
-  padding: 5rem 35rem;
+  padding: 5rem 5rem;
 }
-button {
-  margin: 0 auto;
-  padding: 1.2rem;
-  border-radius: 20px;
-  border: 0;
-  /* text-align: center; */
-}
-.main-btn-shape {
-  font-size: large;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-.main-btn-shape:hover {
-  color: var(--whitesweet);
-  background-color: var(--dark);
+.main-text:hover {
+  color: #000;
+  border-radius: 8px;
 }
 
-/*------------------ section team contain------------- */
+.main-btn-shape {
+  margin: 0 auto;
+  padding: 0 0.8rem;
+  border-radius: 20px;
+  border: 0;
+  text-transform: capitalize;
+  background-color: #000;
+}
+.table-btn-font {
+  color: rgb(250, 246, 246);
+  font-weight: bold;
+  font-size: x-large;
+}
+.table-btn-font:hover {
+  color: rgb(12, 12, 12);
+  font-size: x-large;
+}
+.main-btn-shape:hover {
+  background-color: rgb(255, 250, 250);
+}
+*/
+
+/*------------------ MAKE A TEAM SMARTER------------- */
 .team-contain {
   display: flex;
   flex-flow: column nowrap;
@@ -204,65 +213,100 @@ button {
   font-size: 2rem;
   margin: 0 1rem;
   padding: 10px;
+  /* text-align: center; */
 }
 .team-center {
   text-align: center;
   font-weight: 700;
+  font-size: 3rem;
+}
+/*---------- section what julie give---------- */
+.vp-contain-team {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 3rem;
 }
 
-/*------------------- section avec image julie------------- */
-/* .section-contain{
-display: grid;
-grid-template-columns: 900px 1fr;
-grid-template-rows: 800px 1fr 1fr;
-flex-flow: row nowrap;
-margin: 5rem 1rem;
+.vp-team-img {
+  flex: 1;
+  background: url(../img-julie/speaking\ team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.section-p2{
-  grid-column: 2/3;
-}
-.section-contain h2 {
-  border: #000 solid 1px;
-  text-align: start;
-  letter-spacing: 1.2px;
-  line-height: 1;
+
+.team-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid #333; */
   font-size: 2.2rem;
-  font-weight: 700;
-  font-family: 'Work Sans', sans-serif;
-  /* color: var(--dark); 
-}*/
-
-.section-img-shape {
-  max-width: 100%;
+  padding: 1rem;
+  flex: 1;
 }
-.section-p2 {
-  border: #000 solid 1px;
-  display: block;
+.exp-julie-team {
+  color: rgb(26, 25, 25);
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 0 5rem 0;
 }
-*/
+.vp-contain-team p {
+  line-height: 3rem;
+  text-align: center;
+}
+.exp-julie-team-h3 {
+  color: rgb(20, 20, 20);
+  text-align: center;
+}
 
+/*------------ team leader picture left---------- */
 
+.leader-vp-contain {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 3rem;
+  min-height: 70vh;
+  margin-bottom:5rem ;
+}
 
+.leader-contain-img {
+  flex: 1;
+  background-image: url(../img-julie/speaking\ team\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.leader-vp-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid #333; */
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  flex: 1;
+}
+.leader-containt-title {
+  color: rgb(26, 25, 25);
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem auto;
+  padding: 0;
+}
 
+.exp-julie-team-h3 {
+  color: rgb(20, 20, 20);
+  text-align: center;
+}
 
+.leader-vp-contain p{
+  line-height: 3rem;
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-/*--------------------- setcion 3 images-------------------- */
+/*------------- setcion 3 images-------------------- */
 
 .vp-offer {
-  margin: 0 0;
+  margin: 0;
   padding: 2rem 0;
-  /* background: var(--gradient); */
 }
 
 .offer-container {
@@ -278,7 +322,9 @@ margin: 5rem 1rem;
   margin: 0.4rem;
   flex: 1;
 }
-
+.imgs-title-shape {
+  color: blue;
+}
 .offer-element {
   width: 100%;
   text-align: center;
@@ -308,19 +354,21 @@ section div ul li h3:hover {
 }
 
 /*------------------image hello team--------------*/
-
+.contain{
+  height: 100vh;
+}
 .container-text {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  /* margin-top: 5rem; */
+  margin-top: 5rem;
   /* line-height: 5px; */
 }
 
 .container-text h3 {
   font-size: x-large;
   color: rgb(14, 13, 13);
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .container-text-font {
   margin-top: 1rem;
@@ -333,14 +381,16 @@ section div ul li h3:hover {
   text-align: center;
   color: var(--dark);
   line-height: 15px;
+  flex: 1;
 }
 
 .img-hello-team {
   display: flex;
-  max-width: 1100px;
+  width: auto;
   margin: 2rem auto;
   border-radius: 8px;
 }
+
 
 .hello-team-h3 {
   font-size: 3rem;
@@ -355,9 +405,50 @@ section div ul li h3:hover {
   letter-spacing: 2px;
 }
 
+/* company around the world */
+.contain-company{
+  margin: 5rem 0.1rem 0 0.1rem;
+  height: 100vh;
+}
+
+
+/*----------------- partie des logos---------------- */
+
+.contain-logo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  padding-top: 10rem;
+}
+.contain-logo h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.contain-logo-image {
+  display: block;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+.shape-logo {
+  margin: 1.5rem;
+  max-height: 15rem;
+}
+.offer-separateur-h3 {
+  height: 2px;
+  width: 20%;
+  margin: 3px 0;
+  background-color: #333;
+}
 /*-------------- julie history------------------- */
+.about-julie-title{
+  text-align: center;
+  margin-top: 5rem ;
+  font-size: 3rem;
+}
 .history-contain {
-  margin: 10rem 3rem;
+  margin: 5rem 3rem;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -367,7 +458,7 @@ section div ul li h3:hover {
   border-radius: 10px;
 }
 .history-contain-text {
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   flex: 1;
 }
 .history-contain-text {
@@ -402,35 +493,7 @@ section div ul li h3:hover {
   background-color: var(--dark);
 }
 
-/*----------------- partie des logos---------------- */
 
-.contain-logo {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 80vh;
-  align-items: center;
-  padding-top: 10rem;
-}
-.contain-logo h3 {
-  font-size: 3rem;
-  text-transform: capitalize;
-}
-.contain-logo-image {
-  display: block;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-.shape-logo {
-  margin: 1.5rem;
-  max-height: 15rem;
-}
-.offer-separateur-h3 {
-  height: 2px;
-  width: 20%;
-  margin: 3px 0;
-  background-color: #333;
-}
 
 /*-------------- they speaks about julie-------------------- */
 .speaks-placement {
@@ -460,6 +523,7 @@ section div ul li h3:hover {
 }
 
 /*----------------- footer--------------------- */
+
 footer {
   padding: 5rem 0;
   text-align: center;
@@ -467,9 +531,8 @@ footer {
 }
 
 img {
-  background-image: rgb(15, 15, 236);
+  background-image: rgb(236, 15, 217);
 }
-
 *---------------- page contact -----------------*/ .contact {
   display: flex;
   flex-direction: column;
@@ -535,5 +598,5 @@ input {
   outline: 0;
 }
 strong {
-  font-family: 'Beau Rivage', cursive;
+  font-family: 'times new roman', cursive;
 }
