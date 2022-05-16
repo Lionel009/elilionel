@@ -22,7 +22,7 @@ p:hover {
   font-weight: 600;
 }
 
-html {
+.html {
   font-size: 62.5%;
   --gradient: linear-gradient(
     rgb(8, 206, 255),
