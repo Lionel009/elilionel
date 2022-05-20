@@ -21,9 +21,12 @@ p:hover {
   border-radius: 3px;
   font-weight: 600;
 }
+html{
+   font-size: 62.5%; 
+}
 
 .html {
-  font-size: 62.5%;
+
   --gradient: linear-gradient(
     rgb(8, 206, 255),
     rgba(189, 216, 209, 0.842),
@@ -31,6 +34,11 @@ p:hover {
     rgba(88, 169, 189, 0.89),
     rgba(189, 216, 209, 0.842)
   );
+
+ background: linear-gradient(90deg, #38b5ba 0%, #3F5EFB 100%); 
+ /* background:  #3F5EFB ;  */
+
+
   --shadow: linear-gradient(
     rgba(189, 183, 183, 0.596),
     rgba(39, 37, 37, 0.959)
@@ -39,8 +47,9 @@ p:hover {
   --secondary: rgba(170, 166, 166, 0.918);
   --dark: rgba(10, 10, 10, 0.952);
   --whitesweet: rgba(255, 255, 255, 0.911);
-  background: var(--gradient);
+  /* background: var(--gradient); */
 }
+
 
 h1,
 h2,
@@ -74,17 +83,14 @@ h2 {
 }
 
 .btn {
-  border: 1px solid rgb(5, 8, 8);
-  color: var(--dark);
-  border-radius: 5rem;
-  font-size: large;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0.5rem;
+  background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%);
+  color: white;
+  font-size: 2rem;
+  border-radius: 50px;
 }
 
 .btn:hover {
-  background-color: #000;
+  background: linear-gradient(90deg, #38b5ba 0%, #3F5EFB 100%);
   color: white;
 }
 
@@ -115,7 +121,7 @@ header img {
 .header-a {
   font-family: 'Times New Roman', Times, serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   color: #000;
   border: solid var(--whitesweet);
@@ -127,7 +133,7 @@ nav a:hover {
   font-weight: bold;
   border: solid rgba(248, 227, 188, 0.068);
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 /*--------- team at the table--------- */
 .main-container {
@@ -218,13 +224,13 @@ span {
 .team-center {
   text-align: center;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 /*---------- section what julie give---------- */
 .vp-contain-team {
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .vp-team-img {
@@ -239,7 +245,7 @@ span {
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid #333; */
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 1rem;
   flex: 1;
 }
@@ -280,7 +286,7 @@ span {
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid #333; */
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 1rem 0;
   flex: 1;
 }
@@ -341,6 +347,7 @@ section div ul li h3 {
   font-size: large;
   font-family: 'Work Sans', sans-serif;
 }
+
 section div ul li h3:hover {
   color: var(--whitesweet);
   opacity: 0.8px;
@@ -348,15 +355,13 @@ section div ul li h3:hover {
 }
 .offer-p-elem {
   color: var(--dark);
-  font-size: large;
+  font-size: 2rem;
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
 }
 
 /*------------------image hello team--------------*/
-.contain{
-  height: 100vh;
-}
+
 .container-text {
   display: flex;
   flex-flow: column nowrap;
@@ -400,7 +405,7 @@ section div ul li h3:hover {
 .hello-team-p {
   margin: 0 auto;
   max-width: 800px;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   letter-spacing: 2px;
 }
@@ -421,6 +426,7 @@ section div ul li h3:hover {
   height: 80vh;
   align-items: center;
   padding-top: 10rem;
+  background-color: #fff;
 }
 .contain-logo h3 {
   font-size: 3rem;
@@ -432,7 +438,7 @@ section div ul li h3:hover {
   text-align: center;
 }
 .shape-logo {
-  margin: 1.5rem;
+  margin: 2rem;
   max-height: 15rem;
 }
 .offer-separateur-h3 {
@@ -482,7 +488,7 @@ section div ul li h3:hover {
   display: block;
   margin: 5rem auto;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 50%;
   border: 0.5px solid rgb(0, 174, 255);
   border-radius: 20px;
