@@ -9,6 +9,49 @@ font-family: 'Work Sans', sans-serif; */
   box-sizing: border-box;
   font-family: 'times new roman', 'Work Sans', sans-serif;
 }
+
+.containLogo{
+   height: 100px;
+    width: 100px; 
+    border: 1px solid dark;
+}
+
+.bg-mat{
+  background-image: url("../img-julie/mat.png");
+  background-size: contain;
+  height: 100px;
+  width: 100px; 
+  z-index: 2;
+}
+.bg-power{
+  background-image: url("../img-julie/power.png");
+  background-size: contain;
+  height: 100px;
+  width: 100px; 
+  z-index: 1;
+
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+.norotate {
+  animation: rotationInverse 8s infinite linear;
+}
+
+@keyframes rotation {
+
+  0% {  transform: rotate(0deg); }
+  50%  {transform: rotate(359deg); }
+  100%   {  transform: rotate(0deg);}  
+}
+
+@keyframes rotationInverse {
+  0% {  transform: rotate(359deg); }
+  50%  {transform: rotate(0deg); }
+  100%   {  transform: rotate(359deg);}  
+}
+
 a {
   text-decoration: none;
 }
@@ -19,7 +62,6 @@ li {
 p:hover {
   background-color: #fff;
   border-radius: 3px;
-  font-weight: 600;
 }
 html{
    font-size: 62.5%; 
@@ -113,7 +155,7 @@ header img {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: var(--whitesweet);
+  background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%); 
   z-index: 1;
   padding: auto;
   margin-top: 10px;
@@ -123,12 +165,11 @@ header img {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
-  color: #000;
-  border: solid var(--whitesweet);
+  color: rgb(255, 255, 255);
 }
 
 nav a:hover {
-  color: rgb(248, 14, 6);
+  color: #38b2bc ;
   padding: auto;
   font-weight: bold;
   border: solid rgba(248, 227, 188, 0.068);
@@ -165,7 +206,7 @@ span {
 }
 .main-em {
   font-size: 5rem;
-  color: rgb(0, 255, 242);
+  color: #38b2bc;
   letter-spacing: 10px;
 }
 .main-pshape {
@@ -328,9 +369,9 @@ span {
   margin: 0.4rem;
   flex: 1;
 }
-.imgs-title-shape {
-  color: blue;
-}
+
+
+
 .offer-element {
   width: 100%;
   text-align: center;
@@ -356,6 +397,12 @@ section div ul li h3:hover {
 .offer-p-elem {
   color: var(--dark);
   font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+}
+.offer-p-elem-t {
+  color: var(--dark);
+  font-size: 3rem;
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
 }
@@ -413,7 +460,7 @@ section div ul li h3:hover {
 /* company around the world */
 .contain-company{
   margin: 5rem 0.1rem 0 0.1rem;
-  height: 100vh;
+
 }
 
 
@@ -513,7 +560,6 @@ section div ul li h3:hover {
   flex-flow: column nowrap;
   justify-content: center;
   align-content: center;
-  border: 1px solid;
   max-width: 50%;
   border-radius: 50px;
 }
@@ -536,9 +582,9 @@ footer {
   font-size: large;
 }
 
-img {
+/* img {
   background-image: rgb(236, 15, 217);
-}
+} */
 *---------------- page contact -----------------*/ .contact {
   display: flex;
   flex-direction: column;
@@ -602,7 +648,4 @@ input {
   font-weight: bold;
   font-size: large;
   outline: 0;
-}
-strong {
-  font-family: 'times new roman', cursive;
 }
