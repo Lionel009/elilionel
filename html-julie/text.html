@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
 
     <link rel="stylesheet" href="../css-julie/julie-teamulator.css" />
     <link
@@ -21,25 +22,21 @@
       href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
     <title>Teamulator by Julie</title>
   </head>
-  <body>
+  <body  class="html">
     <!-- https://teamulator-ce878.web.app/AdminPage -->
     <!-- https://teamulator-ce878.web.app/ -->
     <!-- https://teamulator-ce878.web.app/AdminPage/PrivateVideo -->
     <!-- 778 856 6233zoomjulie -->
-
-
     <!--------- header contruction--------->
 
     <div class="containers">
       <header class="vp-contain-header">
-        <a class="header-a-a" href="../html-julie/teamulator-index.html"
+        <a href="../html-julie/teamulator-index.html"
           ><img
             src="../img-julie/julie photo teamulator.png"
-            alt="logo-temulator" class="headers-imgs"
+            alt="logo-temulator"
         /></a>
         <h1 class="header-h1">group performance</h1>
       </header>
@@ -58,37 +55,142 @@
 
       <!-------team at the table----------->
 
-      <main class="main-container">
+      <!-- <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img-julie/img-1.jpeg"  class="d-block w-100 tailleHeight" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img-julie/img-2.jpeg" class="d-block w-100 tailleHeight" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img-julie/img-3.jpeg" class="d-block w-100 tailleHeight" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+      <style>
+
+        .tailleHeight{
+          height: 70vh;
+          object-fit: cover;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 40%;
+            left: 15%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .carousel-item h2{
+        color: rgb(255, 255, 255);
+        }
+
+
+      </style>
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active tailleHeight">
+            <img src="../img-julie/img-1.jpeg" class="d-block w-100" alt="...">
+           
+              <div class="carousel-caption d-none d-md-block bg-dark rounded-pill" >
+
+                <h2>First slide label</h2>
+                <p class="h4">Some representative placeholder content for the first slide.</p>
+
+              </div>
+            
+          </div>
+
+          <div class="carousel-item tailleHeight">
+            <img src="../img-julie/img-2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block bg-dark rounded-pill">
+              <h2>Second slide label</h2>
+              <p class="h4">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item tailleHeight">
+            <img src="../img-julie/img-3.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block bg-dark rounded-pill">
+              <h2>Third slide label</h2>
+              <p class="h4">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+
+      </div>
+
+
+
+      <!-- <main class="main-container">
         <div class="main-img-container">
-          <h2 class="team-H-title">
-            <span class="team-log">TEAM</span><em class="main-em">ULATOR™</em>
+          <h2>
+            <span>TEAM</span><em class="main-em">ULATOR™</em>
             <div class="main-pshape">
               <p class="main-text">
-                You can sit the smartest brains around a table <br> they won't be
-                smart together without <br> these collective performance tools
+                You can sit the smartest brains around a table they won't be
+                smart together without these collective performance tools
               </p>
             </div>
           </h2>
-          <button class="main-btns-shape">
+          <button class="main-btn-shape">
             <a
               href="../html-julie/teamulator-form.html"
               target="_blank"
-              class="table-btns-font header-aa"
+              class="table-btn-font"
               >click here to register</a
             >
           </button>
         </div>
-      </main>
+      </main> -->
 
       <!------------- MAKE A TEAM SMARTER ----------- -->
 
       <div class="team-contain">
-        <h2 class="title-team">How to make team smarter?</h2>
+        <h2 class="title-team">HOW TO MAKE A TEAM SMARTER?</h2>
         <div class="underline"></div>
         <h4 class="team-center">
           Have you ever felt your team is sometimes stuck in meetings?
         </h4>
-        <p class="team-p-contain-team " >
+        <p>
           Are they a theater of ego fights? Does anyone dare to speak up and
           address the real issue? At the level of the organisation, the impact
           is heavier than the time wasted: many postponed or mistaken decisions,
@@ -99,9 +201,9 @@
           Spice up your next event with the inspiring experiential talk, where
           your people will learn and practice:
         </h4>
-        <p class="team-p-contain-team">- How to address disagreement in a constructive way.</p>
-        <p class="team-p-contain-team">- Good meeting behaviors that foster efficient discussions.</p>
-        <p class="team-p-contain-team">
+        <p>- How to address disagreement in a constructive way.</p>
+        <p>- Good meeting behaviors that foster efficient discussions.</p>
+        <p>
           - What to do when the group dynamic interferes with the actual
           business topic.
         </p>
@@ -120,7 +222,7 @@
             Online Course for Team Leaders
             <div class="underline"></div>
           </h3>
-          <p class="julie-contain-text">
+          <p>
             Julie offers you the essence of her work in an online course called
             "Vertical Takeoff". She drew on the metaphor of the pilot to create
             a fun and memorable learning experience. She will give you tools
@@ -149,7 +251,7 @@
           <h3 class="leader-containt-title">Team Performance Optimisation
           <div class="underline"></div>
           </h3>
-          <p class="leader-julie-text">
+          <p>
             Neither the touchy-feely motivational workshops, nor the dry process
             improvement consulting... Virtual or onsite, our team programs are
             built on a rare combination of formal learning AND direct
@@ -172,7 +274,6 @@
       
 
       <!------- setcion 3 images --------->
-      
       <!-- <section class="vp-offer" id="#"> -->
       <div class="offer-container">
         <ul class="offer-list">
@@ -182,7 +283,7 @@
               alt="house-1"
               class="offer-element-image"
             />
-            <h3 class="imgs-title-shape1">team leaders training</h3>
+            <h3 class="imgs-title-shape">team leaders training</h3>
             <p class="offer-p-elem">
               get a complete toolkit in a practical online course that makes
               teams smarter.
@@ -201,9 +302,9 @@
             <img
               src="../img-julie/teampicture2.png"
               alt="house-1"
-              class="offer-element-image offer-container-size"
+              class="offer-element-image"
             />
-            <h3 class="imgs-title-shape2">team intervention</h3>
+            <h3 class="imgs-title-shape">team intervention</h3>
             <p class="offer-p-elem">
               have Julie facilitate and lead your next leadership workshop or
               programme.
@@ -222,10 +323,8 @@
               src="../img-julie/teampicture3.png"
               alt="house-1"
               class="offer-element-image"
-                margin-right: 0.5rem;
-              
             />
-            <h3 class="imgs-title-shape3">inspiring talks</h3>
+            <h3 class="imgs-title-shape">inspiring talks</h3>
             <p class="offer-p-elem">
               inspiring & impactful talks for your conference, event or gala
               dinner.
@@ -269,8 +368,8 @@
             Come experience a virtual team session where your team learns to
             coordinate their efforts while working on their current agenda.
           </p>
-          <div class="btns-container">
-            <a href="#" class="btns"> virtual team coaching</a>
+          <div class="btn-container">
+            <a href="#" class="btn"> virtual team coaching</a>
           </div>
         </div>
       </div>
@@ -280,7 +379,7 @@
         <div class="container">
           <img
           width="100%"
-          src="../img-julie/certificat compagnie.png"
+          src="../img-julie/certificat company.png"
           alt="julie exploring company "
           />
         </div>
@@ -339,85 +438,88 @@
         </div>
       </section>
       <!--------------- they speaks about julie --------------->
-      <div class="containers">
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-            we have been consulting julie on our people and collective
-            intellingent effort since the beginning of our venture. <br />
-            already 10 years ago. Julie is a passionate truly visionnary
-            professionnal. She contribute to our success
-          </p>
-          <img
-            src="../img-julie/img ceo1.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font">joachim azan</p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">
-            founder and ceo at Novaxia asset management.
-          </p>
-        </section>
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-            Julie has very specific approach of transformation management,
-            faraway from classical"design thinking" methodologoes.She developed
-            and applies innovative tools and mindset to enhance collective
-            intelligence across people and teams. <br />
-            We definitly could measure a real impact on people's behavior after
-            the sessions we ran with Julie.
-          </p>
-          <img
-            src="../img-julie/img ceo2.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font">sebastien gracin</p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">CMO at L'oréal.</p>
-        </section>
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-            we have been consulting julie on our people and collective
-            intellingent effort since the beginning of our venture. <br />
-            already 10 years ago. Julie is a passionate truly visionnary
-            professionnal. She contribute to our success
-          </p>
-          <img
-            src="../img-julie/img ceo3.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font">joachim azan</p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">
-            founder and ceo at Novaxia asset management.
-          </p>
-        </section>
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-            Julie has very specific approach of transformation management,
-            faraway from classical"design thinking" methodologoes.She developed
-            and applies innovative tools and mindset to enhance collective
-            intelligence across people and teams. <br />
-            We definitly could measure a real impact on people's behavior after
-            the sessions we ran with Julie.
-          </p>
-          <img
-            src="../img-julie/img ceo4.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font">sebastien gracin</p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">CMO at L'oréal.</p>
-        </section>
+
+
+
+   
+
+
+
+
+
+      <div class="contain">
+
+        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-inner">
+  
+            <div class="carousel-item active tailleHeight" data-bs-interval="2000">
+              <section class="contain-speaks speaks-placement">
+                <p class="speaks-font">
+                  we have been consulting julie on our people and collective
+                  intellingent effort since the beginning of our venture. <br />
+                  already 10 years ago. Julie is a passionate truly visionnary
+                  professionnal. She contribute to our success
+                </p>
+                <img
+                  src="../img-julie/img ceo1.png"
+                  alt="joachim azan"
+                  class="speaks-img"
+                />
+                <p class="speaks-font">joachim azan</p>
+                <div class="offer-separateur"></div>
+                <p class="speaks-font">
+                  founder and ceo at Novaxia asset management.
+                </p>
+              </section>
+            </div>
+  
+            <div class="carousel-item tailleHeight" data-bs-interval="2000">
+              <section class="contain-speaks speaks-placement">
+                <p class="speaks-font">
+                  Julie has very specific approach of transformation management,
+                  faraway from classical"design thinking" methodologoes.She developed
+                  and applies innovative tools and mindset to enhance collective
+                  intelligence across people and teams. <br />
+                  We definitly could measure a real impact on people's behavior after
+                  the sessions we ran with Julie.
+                </p>
+                <img
+                  src="../img-julie/img ceo2.png"
+                  alt="joachim azan"
+                  class="speaks-img"
+                />
+                <p class="speaks-font">sebastien gracin</p>
+                <div class="offer-separateur"></div>
+                <p class="speaks-font">CMO at L'oréal.</p>
+              </section>
+            </div>
+  
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+
+
       </div>
 
 
 
+
+
+
+
+
+
+
+
       <!----------------- julie history --------------->
-      <div class="contyes this is what I am doing but I need more specifique regarde her requestyes this is what I am doing but I need more specifique regarde her requestyes this is what I am doing but I need more specifique regarde her requestain">
+      <div class="contain">
       <h4 class="about-julie-title">history of the founder Julie Benichou
         <div class="underline"></div>
       </h4>
@@ -448,8 +550,8 @@ In her experiential talks, she shares her insights based on her unique combinati
 She created an online program called "Vertical TakeOff" to help organisations to develop their collective intelligence, and implement new ways of working, more adapted to today's environment.
 
 Julie holds a Master in Management from ESCP Europe. She is an ICF-PCC Certified Executive and Team coach and ORSC-CC (Certified Organisational Relationship Systems Coach)</p>
-            <div class="btns-container">
-              <a href="#" class="btns">
+            <div class="btn-container">
+              <a href="#" class="btn">
                 read more about julie
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -477,11 +579,6 @@ Julie holds a Master in Management from ESCP Europe. She is an ICF-PCC Certified
         <footer>
           <div class="footer-img">
             <a href="https://www.linkedin.com/404/">
-              <!-- people speaking -->
-              <div class="people">
-                <img src="../img-julie/ilparle de julie.png" alt="people speaking about julie">
-  
-              </div>
               <img
                 src="../img-julie/linkedin.png"
                 target="_blank"
@@ -490,12 +587,94 @@ Julie holds a Master in Management from ESCP Europe. She is an ICF-PCC Certified
               />
             </a>
           </div>
-          
           <!-- <p class="footer-p">team development Lionel & Eli</p> -->
         </footer>
-      </div>
-      <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> -->
+        
 
+
+
+
+
+
+
+      </div>
+
+
+
+      <!-- <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="tailleHeight d-block w-100">
+              <h1 class="text-center">test</h1>
+            </div>
+            
+          </div>
+          <div class="carousel-item tailleHeight">
+            <img src="../img-julie/julie background.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item tailleHeight">
+            <img src="../img-julie/julie avec micro.png" class="d-block w-100 " alt="...">
+          </div>
+        </div>
+      
+      </div> -->
+
+
+
+
+<!-- <div class="accordion container my-5" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Première chose à savoir sur julie
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        seconde chose à savoir sur julie
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Troisième chose à savoir sur julie
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
