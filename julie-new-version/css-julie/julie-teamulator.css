@@ -505,7 +505,7 @@ section div ul li h3:hover {
 /*-------------- julie history------------------- */
 .about-julie-title{
   text-align: center;
-  margin-top: 5rem ;
+  margin-top: 3rem ;
   font-size: 3rem;
 }
 .history-contain {
@@ -514,9 +514,10 @@ section div ul li h3:hover {
   flex-flow: row nowrap;
 }
 .history-contain-img-julie {
-  width: 100%;
+  max-width: 75rem;
   flex: 1;
   border-radius: 10px;
+  margin-top: 7.5rem;
 }
 .history-contain-text {
   /* margin-right: 1rem; */
@@ -524,12 +525,13 @@ section div ul li h3:hover {
 }
 .history-contain-text {
   /* padding: 4rem; */
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .julie-history-h3 {
+  text-align: center;
   padding-bottom: 2rem;
   font-size: 2.5rem;
 }
@@ -552,6 +554,9 @@ section div ul li h3:hover {
 }
 .julie-history-btn:hover {
   background-color: var(--dark);
+}
+.btn-container{
+text-align: center;
 }
 
 
