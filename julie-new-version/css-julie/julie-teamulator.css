@@ -11,9 +11,8 @@ font-family: 'Work Sans', sans-serif; */
 }
 
 .containLogo{
-   height: 100px;
-    width: 100px; 
-    border: 1px solid dark;
+   height: 90px;
+   border: 1px solid dark;
 }
 
 .bg-mat{
@@ -141,15 +140,23 @@ h2 {
   display: flex;
   flex-direction: row nowrap;
 }
+span {
+  letter-spacing: 10px;
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Work Sans', sans-serif;
+  color: rgb(252, 249, 249);
+}
 
 .header-h1 {
   margin: 0 auto;
   font-size: 5rem;
   text-transform: uppercase;
 }
-header img {
+/* header img {
   max-width: 100px;
-}
+} */
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -184,7 +191,10 @@ nav a:hover {
   width: 3rem;
   margin: 0.7 auto ;
 } */
-/*--------- team at the table--------- */
+
+/*--------- carousel at the table--------- */
+
+
 .main-container {
   display: flex;
   flex: auto;
@@ -204,14 +214,7 @@ nav a:hover {
   /* max-width: 500px; */
 }
 
-span {
-  letter-spacing: 10px;
-  padding: 5rem 0;
-  text-align: center;
-  font-size: 5rem;
-  font-family: 'Work Sans', sans-serif;
-  color: rgb(252, 249, 249);
-}
+
 .main-em {
   font-size: 5rem;
   color: #38b2bc;
@@ -246,7 +249,7 @@ span {
 .main-btn-shape:hover {
   background-color: rgb(255, 250, 250);
 }
-*/
+
 
 /*------------------ MAKE A TEAM SMARTER------------- */
 .team-contain {
