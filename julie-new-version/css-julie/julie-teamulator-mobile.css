@@ -27,6 +27,15 @@ h2 {
   font-size: 2rem;
   text-transform: uppercase;
 }
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%); 
+  z-index: 1;
+  padding: auto;
+}
 .bg-mat{
   background-image: url("../img-julie/mat.png");
   background-size: contain;
@@ -117,3 +126,69 @@ span.team-log {
 
   /* carousel at the table */
 
+/*------------------ MAKE A TEAM SMARTER------------- */
+
+.team-contain {
+  display: block;
+  flex-flow: column wrap;
+}
+.team-center {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.underline {
+  width: 50%;
+  margin: 1rem auto;
+  height: 2.2px;
+  background-color: rgb(47, 172, 230);
+}
+/*------- setcion 3 images ---------*/
+.offer-container {
+  display: block;
+  flex-flow: row nowrap;
+}
+.offer-element-image {
+  border-radius: 0.2rem;
+  margin: 0;
+  width: 98%;
+  
+}
+.offer-list {
+  margin: 0.4rem;
+  flex: 1;
+}
+ul{
+  padding-left: 0;
+}
+
+/*------ image hello team--------- */
+
+.img-hello-team {
+  display: flex;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+.container-text h3{
+  text-align: center;
+  font-size: 3.5rem;
+}
+.container-text-font{
+  font-weight: bold;
+}
+.hello-team-h3 {
+  font-size: 2.5rem;
+  line-height: 35px;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.hello-team-p {
+  margin: 0 auto;
+  max-width: 500px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
