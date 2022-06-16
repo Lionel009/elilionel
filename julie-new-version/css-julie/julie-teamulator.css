@@ -160,6 +160,8 @@ span {
 .header-nav {
   display: flex;
   justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 100%;
   position: sticky;
   top: 0;
   background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%); 
@@ -187,14 +189,20 @@ nav a:hover {
   width: 3rem;
   margin: 0.7rem 0.2rem ;
 }
-/* .nav-language:hover{
-  width: 3rem;
-  margin: 0.7 auto ;
-} */
 
 /*--------- carousel at the table--------- */
 
-
+.containerss-btn{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+}
+/* .btn-plus{
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 10rem;
+  text-align: center;
+} */
 .main-container {
   display: flex;
   flex: auto;
@@ -527,24 +535,47 @@ section div ul li h3:hover {
   margin: 3px 0;
   background-color: #333;
 }
-/*-------------- julie history------------------- */
+/*--------------about julie history------------------- */
 
 .who{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 100vh;
+  grid-template-rows: 100px 50px 50px 100px 100px;
+  min-height: 100vh;
+  gap: 0 1rem 0 0;
+  margin-top: 5rem;
 }
-
-
-
-
-
-
-
-
-
-
+/* .who-content-img:nth-child(1){
+  grid-column:2 ;
+  grid-row: 2/5;
+} */
+.who-title:nth-child(1){
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.who-title:nth-child(2){
+grid-column: 2/3;
+grid-row: 2/3;  
+  
+}
+.who-title-font{
+  font-size: 1.8rem;
+}
+.who-text:nth-child(1){
+  grid-column: 2/3;
+  grid-row: 3/4;
+} 
+ .who-text:nth-child(2){
+  grid-column: 2/3;
+  grid-row: 4/6;
+} 
+.who-text-julie{
+  font-size: 2rem;
+  padding-left:1rem ;
+  letter-spacing: 3px;
+  font-weight: bold;
+  /* text-align: center; */
+}
 
 
 /* .history-contain {
@@ -610,8 +641,19 @@ flex: 1;
 .btn-container{
 text-align: center;
 } */
-
-
+/*-------- ceo about julie--------- */
+.ceo-container{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 4rem 1rem 2rem 1rem ;
+}
+.ceo-container img{
+  max-width: 50%;
+  border-radius: 20px;
+}
+.ceo-name{
+  display: flex;
+}
 
 /*-------------- they speaks about julie-------------------- */
 .speaks-placement {
@@ -641,10 +683,15 @@ text-align: center;
 
 /*----------------- footer--------------------- */
 
-footer {
+footer .footer-img {
   padding: 5rem 0;
   text-align: center;
   font-size: large;
+}
+.footer-index-img{
+  display: block;
+  margin: 30rem auto 0;
+  width: 4%;
 }
 
 /* img {
