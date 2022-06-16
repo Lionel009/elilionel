@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="../css-julie/julie-teamulator.css" />
     <link
       rel="stylesheet"
-      media="only screen and (max-width:500px)"
+      media="only screen and (max-width:450px)"
       href="../css-julie/julie-teamulator-mobile.css"
     />
     <script
@@ -21,74 +27,216 @@
       href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
     <title>Teamulator by Julie</title>
   </head>
-  <body>
+  <body class="html">
     <!-- https://teamulator-ce878.web.app/AdminPage -->
     <!-- https://teamulator-ce878.web.app/ -->
     <!-- https://teamulator-ce878.web.app/AdminPage/PrivateVideo -->
     <!-- 778 856 6233zoomjulie -->
-
-
+    <!-- team developement -->
     <!--------- header contruction--------->
 
     <div class="containers">
       <header class="vp-contain-header">
-        <a class="header-a-a" href="../html-julie/teamulator-index.html"
-          ><img
-            src="../img-julie/julie photo teamulator.png"
-            alt="logo-temulator" class="headers-imgs"
-        /></a>
-        <h1 class="header-h1">group performance</h1>
+        <a href="/">
+          <div class="containLogo">
+            <div class="bg-mat rotate">
+              <div class="bg-power norotate"></div>
+            </div>
+          </div>
+        </a>
+        <h1 class="header-h1">
+          <span class="team-log">TEAM</span><em class="main-em">ULATOR™</em>
+        </h1>
       </header>
       <nav class="header-nav">
-        <a href="#teamleader" class="header-a">team leader</a>
-        <a href="#" class="header-a">keynote</a>
-        <a href="#" class="header-a">about julie</a>
-        <a href="#" class="header-a">testimonials</a>
+        <a
+          href="../html-julie/team-leader.html"
+          target="_blank"
+          class="header-a leader-space"
+          >team leader</a
+        >
+        <a
+          href="../html-julie/team-developpement.html"
+          target="_blank"
+          class="header-a"
+          >team developement</a
+        >
+        <!-- <a href="#" class="header-a">keynote</a> -->
+        <a href="#aboutjulie" class="header-a">about julie</a>
         <a
           href="../html-julie/teamulator-form.html"
           target="_blank"
           class="header-a"
           >sign in</a
         >
+        <a href="#"><img src="../../elilionel-lionel/img-julie/img-drapeau-usa.jpg" alt="flag-usa" class="header-a nav-language"></a>
       </nav>
 
       <!-------team at the table----------->
 
-      <main class="main-container">
+      <!-- <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img-julie/img-1.jpeg"  class="d-block w-100 tailleHeight" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img-julie/img-2.jpeg" class="d-block w-100 tailleHeight" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img-julie/img-3.jpeg" class="d-block w-100 tailleHeight" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+      <style>
+        .tailleHeight {
+          height: 70vh;
+        }
+
+        .carousel-caption {
+          position: absolute;
+          right: 15%;
+          bottom: 40%;
+          left: 15%;
+          padding-top: 1.25rem;
+          padding-bottom: 1.25rem;
+          color: #ffffff;
+          text-align: center;
+        }
+
+        .carousel-item h2 {
+          color: rgb(255, 255, 255);
+        }
+      </style>
+
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active tailleHeight">
+            <img
+              src="../img-julie/annie-spratt-hCb3lIB8L8E-unsplash crop.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+
+            <div class="carousel-caption d-none d-md-block">
+              <h2>
+                You can sit the smartest brains around a table <br />
+                they won't be smart together without <br />
+                these collective performance tools
+              </h2>
+            </div>
+          </div>
+
+          <div class="carousel-item tailleHeight">
+            <img
+              src="../img-julie/austin-distel-wD1LRb9OeEo-unsplash.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>
+                You can sit the smartest brains around a table <br />
+                they won't be smart together without <br />
+                these collective performance tools
+              </h2>
+            </div>
+          </div>
+
+          <div class="carousel-item tailleHeight">
+            <img src="../img-julie/60+.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>
+                You can sit the smartest brains around a table <br />
+                they won't be smart together without <br />
+                these collective performance tools
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+
+      <!-- <main class="main-container">
         <div class="main-img-container">
-          <h2 class="team-H-title">
-            <span class="team-log">TEAM</span><em class="main-em">ULATOR™</em>
+          <h2>
+            <span>TEAM</span><em class="main-em">ULATOR™</em>
             <div class="main-pshape">
               <p class="main-text">
-                You can sit the smartest brains around a table <br> they won't be
-                smart together without <br> these collective performance tools
+                You can sit the smartest brains around a table they won't be
+                smart together without these collective performance tools
               </p>
             </div>
           </h2>
-          <button class="main-btns-shape">
+          <button class="main-btn-shape">
             <a
               href="../html-julie/teamulator-form.html"
               target="_blank"
-              class="table-btns-font header-aa"
+              class="table-btn-font"
               >click here to register</a
             >
           </button>
         </div>
-      </main>
+      </main> -->
 
       <!------------- MAKE A TEAM SMARTER ----------- -->
 
       <div class="team-contain">
-        <h2 class="title-team">How to make team smarter?</h2>
+        <h2 class="title-team">HOW TO MAKE A TEAM SMARTER?</h2>
         <div class="underline"></div>
         <h4 class="team-center">
           Have you ever felt your team is sometimes stuck in meetings?
         </h4>
-        <p class="team-p-contain-team " >
+        <p>
           Are they a theater of ego fights? Does anyone dare to speak up and
           address the real issue? At the level of the organisation, the impact
           is heavier than the time wasted: many postponed or mistaken decisions,
@@ -99,9 +247,9 @@
           Spice up your next event with the inspiring experiential talk, where
           your people will learn and practice:
         </h4>
-        <p class="team-p-contain-team">- How to address disagreement in a constructive way.</p>
-        <p class="team-p-contain-team">- Good meeting behaviors that foster efficient discussions.</p>
-        <p class="team-p-contain-team">
+        <p>- How to address disagreement in a constructive way.</p>
+        <p>- Good meeting behaviors that foster efficient discussions.</p>
+        <p>
           - What to do when the group dynamic interferes with the actual
           business topic.
         </p>
@@ -111,78 +259,17 @@
         </h4>
       </div>
 
-      <!-------section what julie give you ---------->
- 
-      <section class="vp-contain-team">
-        <div class="vp-team-img"></div>
-        <div class="team-text">
-          <h3 id="teamleader" class="exp-julie-team">
-            Online Course for Team Leaders
-            <div class="underline"></div>
-          </h3>
-          <p class="julie-contain-text">
-            Julie offers you the essence of her work in an online course called
-            "Vertical Takeoff". She drew on the metaphor of the pilot to create
-            a fun and memorable learning experience. She will give you tools
-            that will impact your collective endeavors. Julie has studied
-            collective performance for 10 years: up to date on the most advanced
-            and forthcoming research in the field attending actual business
-            meetings in many different industries and organisations of all size
-            personally learning from the best trainers/team coaches over the
-            world. This course is the best way to start implementing those tools
-            within your team. Then, you can invite Julie to challenge your team
-            to apply all these proven ways of working, in your own business
-            context.
-          </p>
-          <h3 class="exp-julie-team-h3">
-            You want them to innovate technologically? Innovate the way you
-            manage them!
-          </h3>
-        </div>
-      </section>
-
-      <!----------- team leader picture left----------->
-      
-      <section class="leader-vp-contain">
-        
-        <div class="leader-vp-text">
-          <h3 class="leader-containt-title">Team Performance Optimisation
-          <div class="underline"></div>
-          </h3>
-          <p class="leader-julie-text">
-            Neither the touchy-feely motivational workshops, nor the dry process
-            improvement consulting... Virtual or onsite, our team programs are
-            built on a rare combination of formal learning AND direct
-            application on a concrete business subject. Through our
-            intervention, your team will learn: How to hold purposeful and
-            efficient meetings How to unlock the unhealthy political games How
-            to manage tensions in a proactive way How to collectively agree on
-            decisions that everyone owns and is committed to execute How to
-            create a solid organization structure, yet flexible enough to evolve
-            How to bring your company's values to life in your day-to-day
-            interactions.
-          </p>
-          <h3 class="exp-julie-team-h3">
-            Be coherent, innovate the way you work together!
-          </h3>
-        </div>
-        <div class="leader-contain-img"></div>
-      </section>
-
-      
-
       <!------- setcion 3 images --------->
-      
       <!-- <section class="vp-offer" id="#"> -->
       <div class="offer-container">
-        <ul class="offer-list">
+        <ul class="offer-list shadow">
           <li class="offer-element">
             <img
               src="../img-julie/teampicture1.png"
               alt="house-1"
               class="offer-element-image"
             />
-            <h3 class="imgs-title-shape1">team leaders training</h3>
+            <h3 class="offer-p-elem-t">Team leaders training</h3>
             <p class="offer-p-elem">
               get a complete toolkit in a practical online course that makes
               teams smarter.
@@ -196,14 +283,14 @@
             </p>
           </li>
         </ul>
-        <ul class="offer-list">
+        <ul class="offer-list shadow">
           <li class="offer-element">
             <img
               src="../img-julie/teampicture2.png"
               alt="house-1"
-              class="offer-element-image offer-container-size"
+              class="offer-element-image"
             />
-            <h3 class="imgs-title-shape2">team intervention</h3>
+            <h3 class="offer-p-elem-t">team intervention</h3>
             <p class="offer-p-elem">
               have Julie facilitate and lead your next leadership workshop or
               programme.
@@ -216,16 +303,14 @@
             </p>
           </li>
         </ul>
-        <ul class="offer-list">
+        <ul class="offer-list shadow">
           <li class="offer-element">
             <img
               src="../img-julie/teampicture3.png"
               alt="house-1"
               class="offer-element-image"
-                margin-right: 0.5rem;
-              
             />
-            <h3 class="imgs-title-shape3">inspiring talks</h3>
+            <h3 class="offer-p-elem-t">inspiring talks</h3>
             <p class="offer-p-elem">
               inspiring & impactful talks for your conference, event or gala
               dinner.
@@ -240,7 +325,7 @@
         </ul>
       </div>
 
-      <!-------- image hello team ----------->
+      <!------------ image hello team --------------->
 
       <div class="contain">
         <div class="container-text">
@@ -269,69 +354,186 @@
             Come experience a virtual team session where your team learns to
             coordinate their efforts while working on their current agenda.
           </p>
-          <div class="btns-container">
-            <a href="#" class="btns"> virtual team coaching</a>
+          <div class="btn-container">
+            <a href="#" class="btn"> virtual team coaching</a>
           </div>
         </div>
       </div>
-      
+
       <!----------------------company around the world---------------------->
       <div class="contain-company">
-        <div class="container">
+        <div class="container-fluid">
           <img
-          width="100%"
-          src="../img-julie/certificat compagnie.png"
-          alt="julie exploring company "
+            width="100%"
+            src="../img-julie/certificat company.png"
+            alt="julie exploring company "
           />
         </div>
       </div>
-      <!----------------- partie des logos ----------->
-      <div class="containers">
 
-        <section class="contain-logo">
-          <h3>They trust Julie</h3>
-          <div class="offer-separateur-h3"></div>
-          <div class="contain-logo-image">
-            <img
+      <div class="contain my-5">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div
+              class="carousel-item tailleCarrousel2 active"
+              data-bs-interval="3000"
+            >
+              <section class="contain-speaks speaks-placement shadow">
+                <p class="speaks-font">
+                  we have been consulting julie on our people and collective
+                  intellingent effort since the beginning of our venture. <br />
+                  already 10 years ago. Julie is a passionate truly visionnary
+                  professionnal. She contribute to our success
+                </p>
+                <img
+                  src="../img-julie/img ceo1.png"
+                  alt="joachim azan"
+                  class="speaks-img"
+                />
+                <p class="speaks-font">joachim azan</p>
+                <div class="offer-separateur"></div>
+                <p class="speaks-font">
+                  founder and ceo at Novaxia asset management.
+                </p>
+              </section>
+            </div>
+
+            <div class="carousel-item tailleCarrousel2" data-bs-interval="3000">
+              <section class="contain-speaks speaks-placement shadow">
+                <p class="speaks-font">
+                  Julie has very specific approach of transformation management,
+                  faraway from classical"design thinking" methodologoes.She
+                  developed and applies innovative tools and mindset to enhance
+                  collective intelligence across people and teams. <br />
+                  We definitly could measure a real impact on people's behavior
+                  after the sessions we ran with Julie.
+                </p>
+                <img
+                  src="../img-julie/img ceo3.png"
+                  alt="joachim azan"
+                  class="speaks-img"
+                />
+                <p class="speaks-font">sebastien gracin</p>
+                <div class="offer-separateur"></div>
+                <p class="speaks-font">CMO at L'oréal.</p>
+              </section>
+            </div>
+
+            <div class="carousel-item tailleCarrousel2" data-bs-interval="3000">
+              <section class="contain-speaks speaks-placement shadow">
+                <p class="speaks-font">
+                  Julie has very specific approach of transformation management,
+                  faraway from classical"design thinking" methodologoes.She
+                  developed and applies innovative tools and mindset to enhance
+                  collective intelligence across people and teams. <br />
+                  We definitly could measure a real impact on people's behavior
+                  after the sessions we ran with Julie.
+                </p>
+                <img
+                  src="../img-julie/img ceo3.png"
+                  alt="joachim azan"
+                  class="speaks-img"
+                />
+                <p class="speaks-font">sebastien gracin</p>
+                <div class="offer-separateur"></div>
+                <p class="speaks-font">CMO at L'oréal.</p>
+              </section>
+            </div>
+
+            <div class="carousel-item tailleCarrousel2" data-bs-interval="3000">
+              <section class="contain-speaks speaks-placement shadow">
+                <p class="speaks-font">
+                  Julie has very specific approach of transformation management,
+                  faraway from classical"design thinking" methodologoes.She
+                  developed and applies innovative tools and mindset to enhance
+                  collective intelligence across people and teams. <br />
+                  We definitly could measure a real impact on people's behavior
+                  after the sessions we ran with Julie.
+                </p>
+                <img
+                  src="../img-julie/img ceo3.png"
+                  alt="joachim azan"
+                  class="speaks-img"
+                />
+                <p class="speaks-font">sebastien gracin</p>
+                <div class="offer-separateur"></div>
+                <p class="speaks-font">CMO at L'oréal.</p>
+              </section>
+            </div>
+
+            <div class="carousel-item tailleCarrousel2" data-bs-interval="3000">
+              <section class="contain-speaks speaks-placement">
+                <p class="speaks-font">
+                  Julie has very specific approach of transformation management,
+                  faraway from classical"design thinking" methodologoes.She
+                  developed and applies innovative tools and mindset to enhance
+                  collective intelligence across people and teams. <br />
+                  We definitly could measure a real impact on people's behavior
+                  after the sessions we ran with Julie.
+                </p>
+                <img
+                  src="../img-julie/img ceo3.png"
+                  alt="joachim azan"
+                  class="speaks-img"
+                />
+                <p class="speaks-font">sebastien gracin</p>
+                <div class="offer-separateur"></div>
+                <p class="speaks-font">CMO at L'oréal.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------------- partie des logos ----------->
+      <section class="contain-logo">
+        <h3>They trust Julie</h3>
+        <div class="offer-separateur-h3"></div>
+        <div class="contain-logo-image">
+          <img
             src="../img-julie/image google.png"
             alt="google"
             class="shape-logo"
-            />
-            <img
-          src="../img-julie/image l'oreal.png"
-          alt="l'oreal"
-          class="shape-logo"
+          />
+          <img
+            src="../img-julie/image l'oreal.png"
+            alt="l'oreal"
+            class="shape-logo"
           />
           <img src="../img-julie/img mars.png" alt="mars" class="shape-logo" />
           <img
-          src="../img-julie/image unilever.png"
-          alt="unilever"
-          class="shape-logo"
+            src="../img-julie/image unilever.png"
+            alt="unilever"
+            class="shape-logo"
           />
           <img
-          src="../img-julie/img cagemini.png"
-          alt="cap gemini"
-          class="shape-logo"
+            src="../img-julie/img cagemini.png"
+            alt="cap gemini"
+            class="shape-logo"
           />
           <img
-          src="../img-julie/imgimagold.png"
-          alt="iam gold"
-          class="shape-logo"
+            src="../img-julie/imgimagold.png"
+            alt="iam gold"
+            class="shape-logo"
           />
           <img
-          src="../img-julie/img harmonie.png"
-          alt="harmonie"
-          class="shape-logo"
+            src="../img-julie/img harmonie.png"
+            alt="harmonie"
+            class="shape-logo"
           />
           <img
-          src="../img-julie/img novaxia.png"
-          alt="novaxia"
-          class="shape-logo"
+            src="../img-julie/img novaxia.png"
+            alt="novaxia"
+            class="shape-logo"
           />
           <img
-          src="../img-julie/img kwerk.png"
-          alt="kwerk"
-          class="shape-logo"
+            src="../img-julie/img kwerk.png"
+            alt="kwerk"
+            class="shape-logo"
           />
           <img
             src="../img-julie/img chenavari.jpg"
@@ -340,82 +542,14 @@
           />
         </div>
       </section>
-    </div>
       <!--------------- they speaks about julie --------------->
-      <div class="containers">
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-            we have been consulting julie on our people and collective
-            intellingent effort since the beginning of our venture. <br />
-            already 10 years ago. Julie is a passionate truly visionnary
-            professionnal. She contribute to our success
-          </p>
-          <img
-            src="../img-julie/img ceo1.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font">joachim azan</p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">
-            founder and ceo at Novaxia asset management.
-          </p>
-        </section>
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-            Julie has very specific approach of transformation management,
-            faraway from classical"design thinking" methodologoes.She developed
-            and applies innovative tools and mindset to enhance collective
-            intelligence across people and teams. <br />
-            We definitly could measure a real impact on people's behavior after
-            the sessions we ran with Julie.
-          </p>
-          <img
-            src="../img-julie/img ceo2.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font">sebastien gracin</p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">CMO at L'oréal.</p>
-        </section>
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-            at a critical time after a startegic aquisition, juklie's sessions had immediat effect on the level of cooperation and trus wihtin our management team
-          </p>
-          <img
-            src="../img-julie/img ceo3.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font"></p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">
-              CEO SDA Spice Israël
-          </p>
-        </section>
-        <section class="contain-speaks speaks-placement">
-          <p class="speaks-font">
-           Julie boats both a profesional experience and coaching skills that allowed me and my yeam to progress in a tangible way. Julie coatching is a unique mix rare qualities. I know she cares. "I trust her".
-          </p>
-          <img
-            src="../img-julie/img ceo4.png"
-            alt="joachim azan"
-            class="speaks-img"
-          />
-          <p class="speaks-font">lawrence knight</p>
-          <div class="offer-separateur"></div>
-          <p class="speaks-font">Co-founder and CEO at kwerk Co->Working , Paris </p>
-        </section>
-      </div>
-
-
 
       <!----------------- julie history --------------->
-      <div class="contyes this is what I am doing but I need more specifique regarde her requestyes this is what I am doing but I need more specifique regarde her requestyes this is what I am doing but I need more specifique regarde her requestain">
-      <h4 class="about-julie-title">history of the founder Julie Benichou
-        <div class="underline"></div>
-      </h4>
+      <div class="contain">
+        <h4 class="about-julie-title" id="aboutjulie">
+          history of the founder Julie Benichou
+          <div class="underline"></div>
+        </h4>
         <div class="history-contain">
           <div class="history-contain-text">
             <h3 class="julie-history-h3">Julie B - MSc, PCC, CPCC, ORSCC</h3>
@@ -435,62 +569,67 @@
               Today, I accelerate the success of ambitious executives and their
               teams, by teaching them collective intelligence skills.
             </p>
-            <p>After working for years in executive positions in large global companies, Julie set herself on a mission: reconnect business objectives with talents’ aspirations.
-
-              WORK = MONEY + PERSONAL FULFILLMENT.
-In her experiential talks, she shares her insights based on her unique combination of international business experience and deep knowledge of people and organizational development.
-
-She created an online program called "Vertical TakeOff" to help organisations to develop their collective intelligence, and implement new ways of working, more adapted to today's environment.
-
-Julie holds a Master in Management from ESCP Europe. She is an ICF-PCC Certified Executive and Team coach and ORSC-CC (Certified Organisational Relationship Systems Coach)</p>
-            <div class="btns-container">
-              <a href="#" class="btns">
+            <p class="julie-history-p">
+              After working for years in executive positions in large global
+              companies, Julie set herself on a mission: reconnect business
+              objectives with talents’ aspirations. WORK = MONEY + PERSONAL
+              FULFILLMENT. In her experiential talks, she shares her insights
+              based on her unique combination of international business
+              experience and deep knowledge of people and organizational
+              development. She created an online program called "Vertical
+              TakeOff" to help organisations to develop their collective
+              intelligence, and implement new ways of working, more adapted to
+              today's environment. Julie holds a Master in Management from ESCP
+              Europe. She is an ICF-PCC Certified Executive and Team coach and
+              ORSC-CC (Certified Organisational Relationship Systems Coach)
+            </p>
+            <div class="btn-container">
+              <a href="#" class="btn">
                 read more about julie
                 <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-down-circle"
-                viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-down-circle"
+                  viewBox="0 0 16 16"
                 >
-                <path
-                fill-rule="evenodd"
-                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
-                /></svg></a>
-              </div>
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+                  /></svg
+              ></a>
             </div>
-            <div>
-              <img
+          </div>
+          <div>
+            <img
               src="../img-julie/julie avec micro.png"
               alt="julie with micro"
               class="history-contain-img-julie"
-              />
-            </div>
+            />
           </div>
+          41661992
         </div>
-        <footer>
-          <div class="footer-img">
-            <a href="https://www.linkedin.com/404/">
-              <!-- people speaking -->
-              <div class="people">
-                <img src="../img-julie/ilparle de julie.png" alt="people speaking about julie">
-  
-              </div>
-              <img
-                src="../img-julie/linkedin.png"
-                target="_blank"
-                alt="linkedin"
-                style="width: 1.7%"
-              />
-            </a>
-          </div>
-          
-          <!-- <p class="footer-p">team development Lionel & Eli</p> -->
-        </footer>
       </div>
-      <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> -->
+      <footer>
+        <div class="footer-img">
+          <a href="https://www.linkedin.com/404/">
+            <img
+              src="../img-julie/linkedin.png"
+              target="_blank"
+              alt="linkedin"
+              style="width: 1.7%"
+            />
+          </a>
+        </div>
+        <!-- <p class="footer-p">team development Lionel & Eli</p> -->
+      </footer>
+    </div>
 
-    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

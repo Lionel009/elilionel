@@ -135,7 +135,7 @@ span.team-log {
 .team-center {
   text-align: center;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .underline {
@@ -191,4 +191,49 @@ ul{
   font-size: 2rem;
   line-height: 35px;
   letter-spacing: 1px;
+}
+/*--------- partie des logos--------- */
+
+.contain-logo {
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  height: 250vh;
+  align-items: center;
+  padding-top: 2rem;
+  /* background-color: #fff; */
+}
+.contain-logo h3{
+  text-align: center;
+  font-size: 2rem;
+}
+.offer-separateur-h3 {
+  height: 2px;
+  width: 30%;
+  margin: 3px auto;
+  background-color: #333;
+}
+.contain-logo-image {
+  display: block;
+  flex-flow: column wrap;
+  text-align: center;
+}
+.shape-logo {
+  margin: 2.5rem;
+  max-height: 15rem;
+}
+/* --------julie history--------- */
+.about-julie-title{
+  text-align: center;
+  margin-top: 0rem ;
+  font-size: 3rem;
+}
+.hitory-contain{
+  margin: 0;
+  display: block;
+  flex-flow: column wrap;
+}
+.img-julie-container{
+  display: block;
+  flex-direction: column;
 }

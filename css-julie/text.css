@@ -9,48 +9,6 @@ font-family: 'Work Sans', sans-serif; */
   box-sizing: border-box;
   font-family: 'times new roman', 'Work Sans', sans-serif;
 }
-
-.containLogo{
-   height: 90px;
-   border: 1px solid dark;
-}
-
-.bg-mat{
-  background-image: url("../img-julie/mat.png");
-  background-size: contain;
-  height: 100px;
-  width: 100px; 
-  z-index: 2;
-}
-.bg-power{
-  background-image: url("../img-julie/power.png");
-  background-size: contain;
-  height: 100px;
-  width: 100px; 
-  z-index: 1;
-
-}
-
-.rotate {
-  animation: rotation 8s infinite linear;
-}
-.norotate {
-  animation: rotationInverse 8s infinite linear;
-}
-
-@keyframes rotation {
-
-  0% {  transform: rotate(0deg); }
-  50%  {transform: rotate(359deg); }
-  100%   {  transform: rotate(0deg);}  
-}
-
-@keyframes rotationInverse {
-  0% {  transform: rotate(359deg); }
-  50%  {transform: rotate(0deg); }
-  100%   {  transform: rotate(359deg);}  
-}
-
 a {
   text-decoration: none;
 }
@@ -61,13 +19,11 @@ li {
 p:hover {
   background-color: #fff;
   border-radius: 3px;
-}
-html{
-   font-size: 62.5%; 
+  font-weight: 600;
 }
 
 .html {
-
+  /* font-size: 62.5%; */
   --gradient: linear-gradient(
     rgb(8, 206, 255),
     rgba(189, 216, 209, 0.842),
@@ -75,11 +31,6 @@ html{
     rgba(88, 169, 189, 0.89),
     rgba(189, 216, 209, 0.842)
   );
-
- background: linear-gradient(90deg, #38b5ba 0%, #3F5EFB 100%); 
- /* background:  #3F5EFB ;  */
-
-
   --shadow: linear-gradient(
     rgba(189, 183, 183, 0.596),
     rgba(39, 37, 37, 0.959)
@@ -88,9 +39,8 @@ html{
   --secondary: rgba(170, 166, 166, 0.918);
   --dark: rgba(10, 10, 10, 0.952);
   --whitesweet: rgba(255, 255, 255, 0.911);
-  /* background: var(--gradient); */
+  background: var(--gradient);
 }
-
 
 h1,
 h2,
@@ -124,14 +74,17 @@ h2 {
 }
 
 .btn {
-  background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%);
-  color: white;
-  font-size: 2rem;
-  border-radius: 50px;
+  border: 1px solid rgb(5, 8, 8);
+  color: var(--dark);
+  border-radius: 5rem;
+  font-size: large;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.5rem;
 }
 
 .btn:hover {
-  background: linear-gradient(90deg, #38b5ba 0%, #3F5EFB 100%);
+  background-color: #000;
   color: white;
 }
 
@@ -140,61 +93,43 @@ h2 {
   display: flex;
   flex-direction: row nowrap;
 }
-span {
-  letter-spacing: 10px;
-  padding: 5rem 0;
-  text-align: center;
-  font-size: 5rem;
-  font-family: 'Work Sans', sans-serif;
-  color: rgb(252, 249, 249);
-}
 
 .header-h1 {
   margin: 0 auto;
   font-size: 5rem;
   text-transform: uppercase;
 }
-/* header img {
+header img {
   max-width: 100px;
-} */
+}
 .header-nav {
   display: flex;
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%); 
+  background-color: var(--whitesweet);
   z-index: 1;
   padding: auto;
-  /* margin-top: 10px; */
+  margin-top: 10px;
 }
 .header-a {
   font-family: 'Times New Roman', Times, serif;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #000;
+  border: solid var(--whitesweet);
 }
-.leader-space{
-  margin-left: 1rem;
-}
+
 nav a:hover {
-  color: #38b2bc ;
+  color: rgb(248, 14, 6);
   padding: auto;
   font-weight: bold;
-  /* font-size: 2rem; */
+  border: solid rgba(248, 227, 188, 0.068);
+  border-radius: 5px;
+  font-size: 20px;
 }
-.nav-language{
-  width: 3rem;
-  margin: 0.7rem 0.2rem ;
-}
-/* .nav-language:hover{
-  width: 3rem;
-  margin: 0.7 auto ;
-} */
-
-/*--------- carousel at the table--------- */
-
-
+/*--------- team at the table--------- */
 .main-container {
   display: flex;
   flex: auto;
@@ -214,10 +149,17 @@ nav a:hover {
   /* max-width: 500px; */
 }
 
-
+span {
+  letter-spacing: 10px;
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Work Sans', sans-serif;
+  color: rgb(252, 249, 249);
+}
 .main-em {
   font-size: 5rem;
-  color: #38b2bc;
+  color: rgb(0, 255, 242);
   letter-spacing: 10px;
 }
 .main-pshape {
@@ -249,10 +191,9 @@ nav a:hover {
 .main-btn-shape:hover {
   background-color: rgb(255, 250, 250);
 }
-
+*/
 
 /*------------------ MAKE A TEAM SMARTER------------- */
-
 .team-contain {
   display: flex;
   flex-flow: column nowrap;
@@ -261,7 +202,7 @@ nav a:hover {
   text-align: center;
 }
 .underline {
-  width: 50%;
+  width: 70rem;
   margin: 1rem auto;
   height: 2.2px;
   background-color: rgb(47, 172, 230);
@@ -277,13 +218,13 @@ nav a:hover {
 .team-center {
   text-align: center;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 /*---------- section what julie give---------- */
 .vp-contain-team {
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .vp-team-img {
@@ -298,7 +239,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid #333; */
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 1rem;
   flex: 1;
 }
@@ -317,83 +258,6 @@ nav a:hover {
   text-align: center;
 }
 
-/*------------- setcion 3 images-------------------- */
-
-.vp-offer {
-  margin: 0;
-  padding: 2rem 1rem;
-}
-
- .offer-container {
-  display: flex; 
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  flex: 1;
-}
-.offer-list-shadow{
-display: flex;
-flex-flow: row nowrap;
-  flex: 1;
-  /* background-color: #3ffb65; */
-}
-.offer-element {
-  /* width: 100%; */
-  padding: 0.5rem;
-  /* background-color: rgb(247, 243, 243); */
-  text-align: center;
-  flex: 1;
-  margin: 1rem;
-}
-ul{
-  padding: 0;
-}
-
-.offer-element-image {
-  border-radius: 0.5rem;
-  /* margin: 0 auto; */
-  width: 100%;
-}
-.offer-list {
-  margin: 0.2rem;
-  flex: 1;
-}
-.offer-separateur {
-  width: 15rem;
-  margin: 0.5rem auto;
-  height: 1px;
-  background-color: rgb(113, 193, 8);
-}
-/* section div ul li h3 {
-  margin: 0 0 2rem 0;
-  color: var(--dark);
-  font-size: 50rem;
-  font-family: 'Work Sans', sans-serif;
-}
-
-section div ul li h3:hover {
-  color: var(--whitesweet);
-  opacity: 0.8px;
-  cursor: pointer;
-} */
-.offer-p-elem {
-  color: var(--dark);
-  font-size: 2rem;
-  margin: 1rem auto;
-  font-weight: 700;
-  font-family: 'Work Sans', sans-serif;
-}
-.offer-p-elem-t {
-  text-transform: capitalize;
-  color: var(--dark);
-  font-size: 2.5rem;
-  font-weight: 700;
-  font-family: 'Work Sans', sans-serif;
-}
-.btn-place{
-  display: block;
-  /* flex-flow: column; */
-  justify-content: center;
-}
 /*------------ team leader picture left---------- */
 
 .leader-vp-contain {
@@ -416,7 +280,7 @@ section div ul li h3:hover {
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid #333; */
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 1rem 0;
   flex: 1;
 }
@@ -438,9 +302,61 @@ section div ul li h3:hover {
   text-align: center;
 }
 
+/*------------- setcion 3 images-------------------- */
+
+.vp-offer {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.offer-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.offer-element-image {
+  border-radius: 0.5rem;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+.offer-list {
+  margin: 0.4rem;
+  flex: 1;
+}
+.imgs-title-shape {
+  color: blue;
+}
+.offer-element {
+  width: 100%;
+  text-align: center;
+}
+.offer-separateur {
+  width: 10rem;
+  margin: 1rem auto;
+  height: 1.2px;
+  background-color: rgb(47, 172, 230);
+}
+section div ul li h3 {
+  margin: 0 0 2rem 0;
+  color: var(--dark);
+  font-size: large;
+  font-family: 'Work Sans', sans-serif;
+}
+section div ul li h3:hover {
+  color: var(--whitesweet);
+  opacity: 0.8px;
+  cursor: pointer;
+}
+.offer-p-elem {
+  color: var(--dark);
+  font-size: large;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+}
 
 /*------------------image hello team--------------*/
-
+.contain{
+  height: 100vh;
+}
 .container-text {
   display: flex;
   flex-flow: column nowrap;
@@ -484,7 +400,7 @@ section div ul li h3:hover {
 .hello-team-p {
   margin: 0 auto;
   max-width: 800px;
-  font-size: 2rem;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 2px;
 }
@@ -492,20 +408,19 @@ section div ul li h3:hover {
 /* company around the world */
 .contain-company{
   margin: 5rem 0.1rem 0 0.1rem;
-
+  height: 100vh;
 }
+
 
 /*----------------- partie des logos---------------- */
 
 .contain-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 10rem;
-  margin: 5rem auto;
   width: 100%;
   height: 80vh;
-  background-color: #fff;
+  align-items: center;
+  padding-top: 10rem;
 }
 .contain-logo h3 {
   font-size: 3rem;
@@ -515,10 +430,9 @@ section div ul li h3:hover {
   display: block;
   flex-flow: column nowrap;
   text-align: center;
-  background-color: #fff;
 }
 .shape-logo {
-  margin: 2rem;
+  margin: 1.5rem;
   max-height: 15rem;
 }
 .offer-separateur-h3 {
@@ -528,62 +442,33 @@ section div ul li h3:hover {
   background-color: #333;
 }
 /*-------------- julie history------------------- */
-
-.who{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 100vh;
+.about-julie-title{
+  text-align: center;
+  margin-top: 5rem ;
+  font-size: 3rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* .history-contain {
+.history-contain {
   margin: 5rem 3rem;
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
-  flex: 1;
 }
-.history-contain-text {
-margin-right: 1rem;
-flex: 1;
-}
-.about-julie-title{
-  text-align: center;
-  width: 100%;
-  margin: 3rem ;
-  font-size: 3rem;
-}
-.history-contain .underline{
-  background-color: #000;
-  width: 45rem;
-}
-
 .history-contain-img-julie {
   width: 100%;
   flex: 1;
   border-radius: 10px;
-  /* margin-top: 7.5rem;*/
-/*}
+}
 .history-contain-text {
-  /* padding: 4rem; 
-  /* text-align: center; 
+  /* margin-right: 1rem; */
+  flex: 1;
+}
+.history-contain-text {
+  /* padding: 4rem; */
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .julie-history-h3 {
-  /* text-align: center; 
   padding-bottom: 2rem;
   font-size: 2.5rem;
 }
@@ -597,7 +482,7 @@ flex: 1;
   display: block;
   margin: 5rem auto;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 50%;
   border: 0.5px solid rgb(0, 174, 255);
   border-radius: 20px;
@@ -607,9 +492,6 @@ flex: 1;
 .julie-history-btn:hover {
   background-color: var(--dark);
 }
-.btn-container{
-text-align: center;
-} */
 
 
 
@@ -625,6 +507,7 @@ text-align: center;
   flex-flow: column nowrap;
   justify-content: center;
   align-content: center;
+  border: 1px solid;
   max-width: 50%;
   border-radius: 50px;
 }
@@ -647,9 +530,9 @@ footer {
   font-size: large;
 }
 
-/* img {
+img {
   background-image: rgb(236, 15, 217);
-} */
+}
 *---------------- page contact -----------------*/ .contact {
   display: flex;
   flex-direction: column;
@@ -713,4 +596,7 @@ input {
   font-weight: bold;
   font-size: large;
   outline: 0;
+}
+strong {
+  font-family: 'times new roman', cursive;
 }
