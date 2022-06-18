@@ -1,0 +1,44 @@
+/*------------ team leader picture left---------- */
+
+.leader-vp-contain {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 3rem;
+  min-height: 70vh;
+  margin-bottom:5rem ;
+}
+
+.leader-contain-img {
+  flex: 1;
+  background-image: url(../img-julie/speaking\ team\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leader-vp-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid #333; */
+  font-size: 2rem;
+  padding: 1rem 0;
+  flex: 1;
+}
+.leader-containt-title {
+  color: rgb(26, 25, 25);
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem auto;
+  padding: 0;
+}
+
+.exp-julie-team-h3 {
+  color: rgb(20, 20, 20);
+  text-align: center;
+}
+
+.leader-vp-contain p{
+  line-height: 3rem;
+  text-align: center;
+}
+
