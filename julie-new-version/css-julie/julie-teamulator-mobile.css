@@ -5,14 +5,14 @@
   padding: 0;
 }
 h2 {
-  font-size:small;
+  font-size: small;
   color: white;
   font-weight: 300;
   font-size: 1rem;
 }
 
 /* logo */
-.containlogo{
+.containlogo {
   height: 2rem;
   width: 10px;
 }
@@ -32,23 +32,26 @@ h2 {
   justify-content: space-between;
   position: relative;
   top: 0;
-  background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%); 
+  background: linear-gradient(90deg, #3f5efb 0%, #38b5ba 100%);
   z-index: 1;
   padding: auto;
 }
-.bg-mat{
-  background-image: url("../img-julie/mat.png");
+.back-space-nav{
+  padding: 0rem !important;
+}
+.bg-mat {
+  background-image: url('../img-julie/mat.png');
   background-size: contain;
   height: 50px;
-  width: 50px; 
+  width: 50px;
   z-index: 2;
 }
-.bg-power{
-  background-image: url("../img-julie/power.png");
+.bg-power {
+  background-image: url('../img-julie/power.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 50px;
-  width: 50px; 
+  width: 50px;
   z-index: 1;
 }
 .rotate {
@@ -57,20 +60,31 @@ h2 {
 .norotate {
   animation: rotationInverse 10s infinite linear;
 }
-.size-responsive{
+.size-responsive {
   min-width: 2rem;
 }
 @keyframes rotation {
-
-  5% {  transform: rotate(0deg); }
-  25%  {transform: rotate(359deg); }
-  100%   {  transform: rotate(0deg);}  
+  5% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes rotationInverse {
-  5% {  transform: rotate(359deg); }
-  25%  {transform: rotate(0deg); }
-  100%   {  transform: rotate(359deg);}  
+  5% {
+    transform: rotate(359deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 h1,
 h2,
@@ -105,26 +119,26 @@ span.team-log {
   align-items: center;
   position: sticky;
   top: 0;
-  background: linear-gradient(90deg, #3F5EFB 0%, #38b5ba 100%); 
+  background: linear-gradient(90deg, #3f5efb 0%, #38b5ba 100%);
   z-index: 1;
   /* padding: auto; */
 }
-  .header-a {
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-  }
-  .leader-space{
-    margin-left: 1rem;
-  }
-  .nav-language {
-    width: 2rem;
-    margin: 0.7rem 0.2rem;
-  }
+.header-a {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.leader-space {
+  margin-left: 1rem;
+}
+.nav-language {
+  width: 2rem;
+  margin: 0.7rem 0.2rem;
+}
 
-  /* carousel at the table */
+/* carousel at the table */
 
 /*------------------ MAKE A TEAM SMARTER------------- */
 
@@ -153,13 +167,12 @@ span.team-log {
   border-radius: 0.2rem;
   margin: 0;
   width: 98%;
-  
 }
 .offer-list {
   margin: 0.4rem;
   flex: 1;
 }
-ul{
+ul {
   padding-left: 0;
 }
 
@@ -171,11 +184,11 @@ ul{
   margin: 2rem auto;
   border-radius: 8px;
 }
-.container-text h3{
+.container-text h3 {
   text-align: center;
   font-size: 3.5rem;
 }
-.container-text-font{
+.container-text-font {
   font-weight: bold;
 }
 .hello-team-h3 {
@@ -203,7 +216,7 @@ ul{
   padding-top: 2rem;
   /* background-color: #fff; */
 }
-.contain-logo h3{
+.contain-logo h3 {
   text-align: center;
   font-size: 2rem;
 }
@@ -223,17 +236,17 @@ ul{
   max-height: 15rem;
 }
 /* --------julie history--------- */
-.about-julie-title{
+.about-julie-title {
   text-align: center;
-  margin-top: 0rem ;
+  margin-top: 0rem;
   font-size: 3rem;
 }
-.hitory-contain{
+.hitory-contain {
   margin: 0;
   display: block;
   flex-flow: column wrap;
 }
-.img-julie-container{
+.img-julie-container {
   display: block;
   flex-direction: column;
 }
