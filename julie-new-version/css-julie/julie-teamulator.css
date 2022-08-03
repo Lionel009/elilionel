@@ -183,26 +183,9 @@ html {
 }
 
 .html {
-  --gradient: linear-gradient(
-    rgb(8, 206, 255),
-    rgba(189, 216, 209, 0.842),
-    rgb(8, 245, 233),
-    rgba(88, 169, 189, 0.89),
-    rgba(189, 216, 209, 0.842)
-  );
-
   background: linear-gradient(90deg, #38b5ba 0%, #3f5efb 100%);
   /* background:  #3F5EFB ;  */
-
-  --shadow: linear-gradient(
-    rgba(189, 183, 183, 0.596),
-    rgba(39, 37, 37, 0.959)
-  );
-  --primary: rgba(163, 49, 49, 0.794);
-  --secondary: rgba(170, 166, 166, 0.918);
   --dark: rgba(10, 10, 10, 0.952);
-  --whitesweet: rgba(255, 255, 255, 0.911);
-  /* background: var(--gradient); */
 }
 
 h1,
@@ -598,7 +581,6 @@ ul {
 }
 
 section div ul li h3:hover {
-  color: var(--whitesweet);
   opacity: 0.8px;
   cursor: pointer;
 } */
