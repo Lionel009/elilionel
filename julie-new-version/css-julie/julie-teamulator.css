@@ -174,13 +174,11 @@ a {
   text-decoration: none;
 }
 
-li {
+/* li {
   list-style: none;
-}
+} */
 
-html {
-  font-size: 62.5%;
-}
+
 
 .html {
   background: linear-gradient(90deg, #38b5ba 0%, #3f5efb 100%);
@@ -188,19 +186,7 @@ html {
   --dark: rgba(10, 10, 10, 0.952);
 }
 
-h1,
-h2,
-h3,
-h4 {
-  padding-top: 1rem;
-}
 
-h2 {
-  font-size: xx-large;
-  color: white;
-  font-weight: 900;
-  font-size: 4rem;
-}
 /* utility */
 
 .containers {
@@ -222,7 +208,6 @@ h2 {
 .btn {
   background: linear-gradient(90deg, #3f5efb 0%, #38b5ba 100%);
   color: white;
-  font-size: 2rem;
   border-radius: 50px;
 }
 
@@ -237,18 +222,16 @@ h2 {
   display: flex;
   flex-direction: row nowrap;
 }
-span {
+/* span {
   letter-spacing: 10px;
   padding: 5rem 0;
   text-align: center;
-  font-size: 5rem;
   font-family: 'Work Sans', sans-serif;
   color: rgb(252, 249, 249);
-}
+} */
 
 .header-h1 {
   margin: 0 auto;
-  font-size: 5rem;
   text-transform: uppercase;
 }
 .tracking-in-contract-bck {
@@ -325,12 +308,8 @@ span {
 /* header img {
   max-width: 100px;
 } */
-.nav-sizing{
-  font-size: 1.5rem;
-}
-.droping-nav:hover{
-  font-size: 1.5rem;
-}
+
+
 .back-space-nav{
   padding-right: 70rem;
 }
@@ -349,19 +328,17 @@ span {
 .header-a {
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 2rem;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 .leader-space {
   margin-left: 1rem;
 }
-nav a:hover {
+/* nav a:hover {
   color: #38b2bc;
   padding: auto;
   font-weight: bold;
-  /* font-size: 2rem; */
-}
+} */
 .nav-language {
   width: 3rem;
   margin: 0.7rem 0.2rem;
@@ -400,7 +377,6 @@ nav a:hover {
 }
 
 .main-em {
-  font-size: 5rem;
   color: #38b2bc;
   letter-spacing: 10px;
 }
@@ -424,11 +400,9 @@ nav a:hover {
 .table-btn-font {
   color: rgb(250, 246, 246);
   font-weight: bold;
-  font-size: x-large;
 }
 .table-btn-font:hover {
   color: rgb(12, 12, 12);
-  font-size: x-large;
 }
 .main-btn-shape:hover {
   background-color: rgb(255, 250, 250);
@@ -457,7 +431,6 @@ nav a:hover {
 .p-index-team-contain {
   color: var(--dark);
   font-family: 'Work Sans', sans-serif;
-  font-size: 2rem;
   font-weight: 600;
   margin: 0 1rem;
   padding: 10px;
@@ -470,7 +443,6 @@ nav a:hover {
   letter-spacing: 0.2rem;
   text-align: center;
   font-weight: 700;
-  font-size: 2.5rem;
 }
 /* team-our story */
 /* what julie did */
@@ -478,7 +450,6 @@ nav a:hover {
   text-align: center;
 }
 .inspiring-text-font {
-  font-size: 2.5rem;
   text-align: center;
   line-height: 3rem;
   word-spacing: 0.3rem;
@@ -491,7 +462,6 @@ nav a:hover {
 }
 /*------------ section intervention page----- */
 .interventtion-p-font {
-  font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: 900;
 }
@@ -507,14 +477,12 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid #333; */
-  font-size: 2rem;
   padding: 1rem;
   flex: 1;
 }
 .exp-julie-team {
   color: rgb(26, 25, 25);
   text-align: center;
-  font-size: 4rem;
   padding: 0 0 5rem 0;
 }
 .vp-contain-team p {
@@ -554,9 +522,7 @@ nav a:hover {
   flex: 1;
   margin: 1rem;
 }
-ul {
-  padding: 0;
-}
+
 
 .offer-element-image {
   border-radius: 0.5rem;
@@ -573,20 +539,9 @@ ul {
   height: 1px;
   background-color: rgb(113, 193, 8);
 }
-/* section div ul li h3 {
-  margin: 0 0 2rem 0;
-  color: var(--dark);
-  font-size: 50rem;
-  font-family: 'Work Sans', sans-serif;
-}
 
-section div ul li h3:hover {
-  opacity: 0.8px;
-  cursor: pointer;
-} */
 .offer-p-elem {
   color: var(--dark);
-  font-size: 2rem;
   margin: 1rem auto;
   font-weight: 700;
   /* font-family: 'Work Sans', sans-serif; */
@@ -594,7 +549,6 @@ section div ul li h3:hover {
 .offer-p-elem-t {
   text-transform: capitalize;
   color: var(--dark);
-  font-size: 2.5rem;
   font-weight: 700;
   /* font-family: 'Work Sans', sans-serif; */
 }
@@ -615,13 +569,10 @@ section div ul li h3:hover {
 }
 
 .container-text h3 {
-  font-size: x-large;
   color: rgb(14, 13, 13);
-  font-size: 3.5rem;
 }
 .container-text-font {
   margin-top: 1rem;
-  font-size: 2rem;
 }
 
 .hello-team-text-contain {
@@ -641,14 +592,12 @@ section div ul li h3:hover {
 }
 
 .hello-team-h3 {
-  font-size: 3rem;
   line-height: 35px;
   margin-bottom: 2rem;
 }
 .hello-team-p {
   margin: 0 auto;
   max-width: 800px;
-  font-size: 2rem;
   line-height: 30px;
   letter-spacing: 2px;
 }
@@ -671,7 +620,6 @@ section div ul li h3:hover {
   background-color: #fff;
 }
 .contain-logo h3 {
-  font-size: 3rem;
   text-transform: capitalize;
 }
 .contain-logo-image {
@@ -712,7 +660,6 @@ section div ul li h3:hover {
 }
 .speaks-font {
   font-family: 'Work Sans', sans-serif;
-  font-size: large;
   text-align: center;
   font-weight: bold;
 }
@@ -724,12 +671,6 @@ section div ul li h3:hover {
 .footer-img {
   padding: 4rem 0 2rem 0;
   text-align: center;
-  font-size: 3rem;
-  
-  /* background-color: rgb(139, 0, 72); */
-}
-.footer-font {
-  font-size: 1.2rem;
 }
 
 .footer-index-img {
@@ -738,11 +679,4 @@ section div ul li h3:hover {
   width: 3%;
 }
 
-/* .contain-foot-img{
-  margin: 6rem 1rem 0rem 6rem;
-  text-align: center;
-} */
-/* .footer-p {
-  text-align: center;
-  font-size: 2rem;
-} */
+
